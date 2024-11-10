@@ -1,0 +1,315 @@
+[
+    {
+        "id": "82af6ab3b67e666f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e8af2898c698bc3b",
+        "type": "inject",
+        "z": "82af6ab3b67e666f",
+        "name": "Produtos",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T",
+        "payloadType": "str",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "b7b1bdebc373e94a"
+            ]
+        ]
+    },
+    {
+        "id": "b7b1bdebc373e94a",
+        "type": "function",
+        "z": "82af6ab3b67e666f",
+        "name": "Query SQL",
+        "func": "msg.payload = `SELECT * FROM Produtos\n               WHERE title LIKE '${msg.payload}%'`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "47414ccb6cb998e1"
+            ]
+        ]
+    },
+    {
+        "id": "47414ccb6cb998e1",
+        "type": "MSSQL",
+        "z": "82af6ab3b67e666f",
+        "mssqlCN": "7cb2429f77393102",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [
+                "7d76728709ca9a9b"
+            ]
+        ]
+    },
+    {
+        "id": "7d76728709ca9a9b",
+        "type": "ui_table",
+        "z": "82af6ab3b67e666f",
+        "group": "49459e9df28e5c3a",
+        "name": "Information",
+        "order": 0,
+        "width": "20",
+        "height": "20",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "351ee3f09b7dbc9a",
+        "type": "inject",
+        "z": "82af6ab3b67e666f",
+        "name": "Produtos",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "35",
+        "payloadType": "str",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "14c2775ea01f994d"
+            ]
+        ]
+    },
+    {
+        "id": "14c2775ea01f994d",
+        "type": "function",
+        "z": "82af6ab3b67e666f",
+        "name": "Query SQL",
+        "func": "// Suponha que msg.payload contenha o valor de estoque mínimo que você deseja\nlet stockValue = msg.payload;  // O valor dinâmico de msg.payload\n\nmsg.payload = `SELECT * FROM Produtos\n               WHERE stock > ${stockValue}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "633ca236f22fb808"
+            ]
+        ]
+    },
+    {
+        "id": "633ca236f22fb808",
+        "type": "MSSQL",
+        "z": "82af6ab3b67e666f",
+        "mssqlCN": "7cb2429f77393102",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 380,
+        "wires": [
+            [
+                "eaee77697adb1306"
+            ]
+        ]
+    },
+    {
+        "id": "eaee77697adb1306",
+        "type": "ui_table",
+        "z": "82af6ab3b67e666f",
+        "group": "49459e9df28e5c3a",
+        "name": "Information",
+        "order": 0,
+        "width": "20",
+        "height": "20",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "69430440953ddf39",
+        "type": "inject",
+        "z": "82af6ab3b67e666f",
+        "name": "Produtos",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "15",
+        "payloadType": "str",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "1d4d42343bcbc2ca"
+            ]
+        ]
+    },
+    {
+        "id": "1d4d42343bcbc2ca",
+        "type": "function",
+        "z": "82af6ab3b67e666f",
+        "name": "Query SQL",
+        "func": "// Suponha que msg.payload contenha o valor do peso máximo, como 25\nlet maxWeight = msg.payload;  // O valor dinâmico que será passado\n\nmsg.payload = `SELECT * \n               FROM Produtos\n               WHERE category IN (\n                   SELECT category\n                   FROM Produtos\n                   GROUP BY category\n                   HAVING SUM(weight) < ${maxWeight}\n               );`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "b3a06a21dca7de84"
+            ]
+        ]
+    },
+    {
+        "id": "b3a06a21dca7de84",
+        "type": "MSSQL",
+        "z": "82af6ab3b67e666f",
+        "mssqlCN": "7cb2429f77393102",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 540,
+        "wires": [
+            [
+                "c231477aa03d90a4"
+            ]
+        ]
+    },
+    {
+        "id": "c231477aa03d90a4",
+        "type": "ui_table",
+        "z": "82af6ab3b67e666f",
+        "group": "49459e9df28e5c3a",
+        "name": "Information",
+        "order": 0,
+        "width": "20",
+        "height": "20",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7cb2429f77393102",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "ISIECommerce",
+        "server": "localhost",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "ISIECommerce",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "49459e9df28e5c3a",
+        "type": "ui_group",
+        "name": "Information Table",
+        "tab": "a7aa91b67b584991",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7aa91b67b584991",
+        "type": "ui_tab",
+        "name": "Title",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

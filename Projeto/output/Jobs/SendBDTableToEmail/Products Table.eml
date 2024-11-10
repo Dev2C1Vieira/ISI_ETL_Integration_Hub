@@ -1,0 +1,1593 @@
+Received: from DBBPR04MB7899.eurprd04.prod.outlook.com (2603:10a6:10:1e1::21)
+ by VI1PR04MB5776.eurprd04.prod.outlook.com with HTTPS; Wed, 23 Oct 2024
+ 20:41:49 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=alunos.ipca.pt;
+Received: from VI1PR04MB5776.eurprd04.prod.outlook.com (2603:10a6:803:e7::14)
+ by DBBPR04MB7899.eurprd04.prod.outlook.com (2603:10a6:10:1e1::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8093.17; Wed, 23 Oct
+ 2024 20:41:47 +0000
+Received: from VI1PR04MB5776.eurprd04.prod.outlook.com
+ ([fe80::cc73:757f:72b1:9e94]) by VI1PR04MB5776.eurprd04.prod.outlook.com
+ ([fe80::cc73:757f:72b1:9e94%4]) with mapi id 15.20.8069.027; Wed, 23 Oct 2024
+ 20:41:47 +0000
+Date: Wed, 23 Oct 2024 21:41:46 +0100 (WEST)
+From: Pedro Vieira <a25626@alunos.ipca.pt>
+To: a25626@alunos.ipca.pt
+Message-ID: <879048087.20.1729716107870@PCPHVieira.lan>
+Subject: Products Table
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_19_1610408467.1729716106436"
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2024 20:41:47.2816
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b135cc8c-43b2-445b-b222-08dcf3a31d13
+X-MS-Exchange-Organization-AuthSource: VI1PR04MB5776.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: PAZP264CA0018.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:102:21::23) To VI1PR04MB5776.eurprd04.prod.outlook.com
+ (2603:10a6:803:e7::14)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: a25626@alunos.ipca.pt
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ VI1PR04MB5776:EE_|DBBPR04MB7899:EE_|VI1PR04MB5776:EE_
+X-MS-Office365-Filtering-Correlation-Id: b135cc8c-43b2-445b-b222-08dcf3a31d13
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|366016|8096899003|41050700001;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:VI1PR04MB5776.eurprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(8096899003)(41050700001);DIR:INT;
+X-MS-Exchange-CrossTenant-Network-Message-Id: b135cc8c-43b2-445b-b222-08dcf3a31d13
+X-MS-Exchange-CrossTenant-AuthSource: VI1PR04MB5776.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2024 20:41:47.6512
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 92742eae-a119-43fb-a956-d7def744881a
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: qbnFUj5U1EfK5uNr0VikGdkCXMq3yXXDoXAzsUXlJ/sTIJRFi8JywI58gsQG7XACCGvJa9/7wDM3XIao8jCshg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DBBPR04MB7899
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8695573
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8069.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	aoBATXnF9XRJACjubWSGGyGZkdRtPEbFzeNGkVaKFoMFSOOJ72hFA5zVs4BeIANffe2O8TWbtyCAyw69W6SKsApoiaH55SS6BpfGBFhUg4wS67rw5lmrBgofDn93Mc0oC0uJJQZaTk/s6QHMu+Nnlw6qDr7mYtZ95WT6y2g08XStU9wvnjbrnl3ZvCVW3+bRVi3QWECewmlRZNOHfGeqBauehCvMxWbiAh6KuV/WGa/bW1CmW9yjRvMMTSa81akYTy1hshcpnkK3Jzw2YdgQMMh47ecdFcc2TJKWWJ0C/mfr4K3O28SRVfwp4P7eE3jSJMdL5Rne6H7V0k4iKuMVpZaMM2va9qV47QuchTbRzq8ooe6iAV/q5IRqMEiqx1Sjpp+7Gt9zmhEmWtLxzxwOPkt/8xEmOzKImVWmB44E3fzjbhEA3eLcWGZpTlM1yVyS2STM+/UDCN7fWLj3kedX42QiDByH7394iAD2FCef3NUpJvtC+nIWy4svrXpC+Kmn+2WlDiwvzMgS0qAFpv3JQFycpFTWb7hmyWf50YYbN9jA+MeavBtFokfot0YY1n7KK8B9WivBSIpF4riEIt1z2rBforpPfCLzhAKwkeZr8/VYq0sSE25USQ6tLEYzzI6j7ddjPDxShbfKex6h1bQ7EMa1UJRLh2FkEUaCOcL+qCabVZ3Jd5uB1lRvZy4AqrwfCjNbs2Q53qv1DUCqfahlN0ggxwjox8SuZiWFwt2uACAfam84IqJx7TGYGS4u/WM+i2it9pkDsJSlZSFk/2KrHfWnKamH0pRG317TQRAlaI/4kqPekkfPZySIZLa4SFZ6FMEVg6AnwOB2bJMrjDolnw==
+MIME-Version: 1.0
+
+------=_Part_19_1610408467.1729716106436
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">  =
+ <head>      <style>                    table {                    font-fam=
+ily: arial, sans-serif;                    border-collapse: collapse;      =
+              width: 100%;                    }                    td, th {=
+                    border: 1px solid #dddddd;                    text-alig=
+n: left;                    padding: 8px;                    }             =
+       tr:nth-child(even) {                    background-color: #dddddd;  =
+                  }                </style></head>   <body>      <h2>Produc=
+ts information</h2>      <table border=3D"3">         <tr>            <th s=
+tyle=3D"text-align:center">ID</th>            <th style=3D"text-align:cente=
+r">Title</th>            <th style=3D"text-align:center">Description</th>  =
+          <th style=3D"text-align:center">Category</th>            <th styl=
+e=3D"text-align:center">Price</th>            <th style=3D"text-align:cente=
+r">Stock</th>            <th style=3D"text-align:center">Brand</th>        =
+    <th style=3D"text-align:center">Weight</th>         </tr>         <tr> =
+           <td style=3D"text-align:center">1</td>            <td style=3D"t=
+ext-align:center">Essence Mascara Lash Princess</td>            <td style=
+=3D"text-align:center">The Essence Mascara Lash Princess is a popular masca=
+ra kno               lashes with this long-lasting and cruelty-free formula=
+.            </td>            <td style=3D"text-align:center">beauty</td>  =
+          <td style=3D"text-align:center">9.99</td>            <td style=3D=
+"text-align:center">5</td>            <td style=3D"text-align:center">Essen=
+ce</td>            <td style=3D"text-align:center">2.0</td>         </tr>  =
+       <tr>            <td style=3D"text-align:center">2</td>            <t=
+d style=3D"text-align:center">Eyeshadow Palette with Mirror</td>           =
+ <td style=3D"text-align:center">The Eyeshadow Palette with Mirror offers a=
+ versatile range               mirror, it's convenient for on-the-go makeup=
+ application.            </td>            <td style=3D"text-align:center">b=
+eauty</td>            <td style=3D"text-align:center">19.99</td>           =
+ <td style=3D"text-align:center">44</td>            <td style=3D"text-align=
+:center">Glamour Beauty</td>            <td style=3D"text-align:center">3.0=
+</td>         </tr>         <tr>            <td style=3D"text-align:center"=
+>3</td>            <td style=3D"text-align:center">Powder Canister</td>    =
+        <td style=3D"text-align:center">The Powder Canister is a finely mil=
+led setting powder desi               formula, it provides a smooth and mat=
+te finish.            </td>            <td style=3D"text-align:center">beau=
+ty</td>            <td style=3D"text-align:center">14.99</td>            <t=
+d style=3D"text-align:center">59</td>            <td style=3D"text-align:ce=
+nter">Velvet Touch</td>            <td style=3D"text-align:center">8.0</td>=
+         </tr>         <tr>            <td style=3D"text-align:center">4</t=
+d>            <td style=3D"text-align:center">Red Lipstick</td>            =
+<td style=3D"text-align:center">The Red Lipstick is a classic and bold choi=
+ce for adding a               it provides a vibrant and long-lasting finish=
+.            </td>            <td style=3D"text-align:center">beauty</td>  =
+          <td style=3D"text-align:center">12.99</td>            <td style=
+=3D"text-align:center">68</td>            <td style=3D"text-align:center">C=
+hic Cosmetics</td>            <td style=3D"text-align:center">5.0</td>     =
+    </tr>         <tr>            <td style=3D"text-align:center">5</td>   =
+         <td style=3D"text-align:center">Red Nail Polish</td>            <t=
+d style=3D"text-align:center">The Red Nail Polish offers a rich and glossy =
+red hue for v               a salon-quality finish at home.            </td=
+>            <td style=3D"text-align:center">beauty</td>            <td sty=
+le=3D"text-align:center">8.99</td>            <td style=3D"text-align:cente=
+r">71</td>            <td style=3D"text-align:center">Nail Couture</td>    =
+        <td style=3D"text-align:center">9.0</td>         </tr>         <tr>=
+            <td style=3D"text-align:center">6</td>            <td style=3D"=
+text-align:center">Calvin Klein CK One</td>            <td style=3D"text-al=
+ign:center">CK One by Calvin Klein is a classic unisex fragrance, know     =
+          for everyday wear.            </td>            <td style=3D"text-=
+align:center">fragrances</td>            <td style=3D"text-align:center">49=
+.99</td>            <td style=3D"text-align:center">17</td>            <td =
+style=3D"text-align:center">Calvin Klein</td>            <td style=3D"text-=
+align:center">5.0</td>         </tr>         <tr>            <td style=3D"t=
+ext-align:center">7</td>            <td style=3D"text-align:center">Chanel =
+Coco Noir Eau De</td>            <td style=3D"text-align:center">Coco Noir =
+by Chanel is an elegant and mysterious fragrance               evening occa=
+sions.            </td>            <td style=3D"text-align:center">fragranc=
+es</td>            <td style=3D"text-align:center">129.99</td>            <=
+td style=3D"text-align:center">41</td>            <td style=3D"text-align:c=
+enter">Chanel</td>            <td style=3D"text-align:center">4.0</td>     =
+    </tr>         <tr>            <td style=3D"text-align:center">8</td>   =
+         <td style=3D"text-align:center">Dior J'adore</td>            <td s=
+tyle=3D"text-align:center">J'adore by Dior is a luxurious and floral fragra=
+nce, known               and sophistication.            </td>            <t=
+d style=3D"text-align:center">fragrances</td>            <td style=3D"text-=
+align:center">89.99</td>            <td style=3D"text-align:center">91</td>=
+            <td style=3D"text-align:center">Dior</td>            <td style=
+=3D"text-align:center">10.0</td>         </tr>         <tr>            <td =
+style=3D"text-align:center">9</td>            <td style=3D"text-align:cente=
+r">Dolce Shine Eau de</td>            <td style=3D"text-align:center">Dolce=
+ Shine by Dolce &amp; Gabbana is a vibrant and fruity               a joyfu=
+l and youthful scent.            </td>            <td style=3D"text-align:c=
+enter">fragrances</td>            <td style=3D"text-align:center">69.99</td=
+>            <td style=3D"text-align:center">3</td>            <td style=3D=
+"text-align:center">Dolce &amp; Gabbana</td>            <td style=3D"text-a=
+lign:center">5.0</td>         </tr>         <tr>            <td style=3D"te=
+xt-align:center">10</td>            <td style=3D"text-align:center">Gucci B=
+loom Eau de</td>            <td style=3D"text-align:center">Gucci Bloom by =
+Gucci is a floral and captivating fragrance               and romantic scen=
+t.            </td>            <td style=3D"text-align:center">fragrances</=
+td>            <td style=3D"text-align:center">79.99</td>            <td st=
+yle=3D"text-align:center">93</td>            <td style=3D"text-align:center=
+">Gucci</td>            <td style=3D"text-align:center">10.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">11</td>       =
+     <td style=3D"text-align:center">Annibale Colombo Bed</td>            <=
+td style=3D"text-align:center">The Annibale Colombo Bed is a luxurious and =
+elegant bed fr               bedroom.            </td>            <td style=
+=3D"text-align:center">furniture</td>            <td style=3D"text-align:ce=
+nter">1899.99</td>            <td style=3D"text-align:center">47</td>      =
+      <td style=3D"text-align:center">Annibale Colombo</td>            <td =
+style=3D"text-align:center">3.0</td>         </tr>         <tr>            =
+<td style=3D"text-align:center">12</td>            <td style=3D"text-align:=
+center">Annibale Colombo Sofa</td>            <td style=3D"text-align:cente=
+r">The Annibale Colombo Sofa is a sophisticated and comfortab              =
+ for your living room.            </td>            <td style=3D"text-align:=
+center">furniture</td>            <td style=3D"text-align:center">2499.99</=
+td>            <td style=3D"text-align:center">16</td>            <td style=
+=3D"text-align:center">Annibale Colombo</td>            <td style=3D"text-a=
+lign:center">3.0</td>         </tr>         <tr>            <td style=3D"te=
+xt-align:center">13</td>            <td style=3D"text-align:center">Bedside=
+ Table African Cherry</td>            <td style=3D"text-align:center">The B=
+edside Table in African Cherry is a stylish and funct               and a t=
+ouch of elegance.            </td>            <td style=3D"text-align:cente=
+r">furniture</td>            <td style=3D"text-align:center">299.99</td>   =
+         <td style=3D"text-align:center">16</td>            <td style=3D"te=
+xt-align:center">Furniture Co.</td>            <td style=3D"text-align:cent=
+er">10.0</td>         </tr>         <tr>            <td style=3D"text-align=
+:center">14</td>            <td style=3D"text-align:center">Knoll Saarinen =
+Executive Conference Chair</td>            <td style=3D"text-align:center">=
+The Knoll Saarinen Executive Conference Chair is a modern                wi=
+th its timeless design.            </td>            <td style=3D"text-align=
+:center">furniture</td>            <td style=3D"text-align:center">499.99</=
+td>            <td style=3D"text-align:center">47</td>            <td style=
+=3D"text-align:center">Knoll</td>            <td style=3D"text-align:center=
+">3.0</td>         </tr>         <tr>            <td style=3D"text-align:ce=
+nter">15</td>            <td style=3D"text-align:center">Wooden Bathroom Si=
+nk With Mirror</td>            <td style=3D"text-align:center">The Wooden B=
+athroom Sink with Mirror is a unique and styli               and a matching=
+ mirror.            </td>            <td style=3D"text-align:center">furnit=
+ure</td>            <td style=3D"text-align:center">799.99</td>            =
+<td style=3D"text-align:center">95</td>            <td style=3D"text-align:=
+center">Bath Trends</td>            <td style=3D"text-align:center">6.0</td=
+>         </tr>         <tr>            <td style=3D"text-align:center">16<=
+/td>            <td style=3D"text-align:center">Apple</td>            <td s=
+tyle=3D"text-align:center">Fresh and crisp apples, perfect for snacking or =
+incorporat            <td style=3D"text-align:center">groceries</td>       =
+     <td style=3D"text-align:center">1.99</td>            <td style=3D"text=
+-align:center">9</td>            <td style=3D"text-align:center"></td>     =
+       <td style=3D"text-align:center">8.0</td>         </tr>         <tr> =
+           <td style=3D"text-align:center">17</td>            <td style=3D"=
+text-align:center">Beef Steak</td>            <td style=3D"text-align:cente=
+r">High-quality beef steak, great for grilling or cooking to             <t=
+d style=3D"text-align:center">groceries</td>            <td style=3D"text-a=
+lign:center">12.99</td>            <td style=3D"text-align:center">96</td> =
+           <td style=3D"text-align:center"></td>            <td style=3D"te=
+xt-align:center">9.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">18</td>            <td style=3D"text-align:center">C=
+at Food</td>            <td style=3D"text-align:center">Nutritious cat food=
+ formulated to meet the dietary needs o            <td style=3D"text-align:=
+center">groceries</td>            <td style=3D"text-align:center">8.99</td>=
+            <td style=3D"text-align:center">13</td>            <td style=3D=
+"text-align:center"></td>            <td style=3D"text-align:center">9.0</t=
+d>         </tr>         <tr>            <td style=3D"text-align:center">19=
+</td>            <td style=3D"text-align:center">Chicken Meat</td>         =
+   <td style=3D"text-align:center">Fresh and tender chicken meat, suitable =
+for various culina            <td style=3D"text-align:center">groceries</td=
+>            <td style=3D"text-align:center">9.99</td>            <td style=
+=3D"text-align:center">69</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">7.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">20</td>            <td =
+style=3D"text-align:center">Cooking Oil</td>            <td style=3D"text-a=
+lign:center">Versatile cooking oil suitable for frying, saut=C3=A9ing, and =
+v            <td style=3D"text-align:center">groceries</td>            <td =
+style=3D"text-align:center">4.99</td>            <td style=3D"text-align:ce=
+nter">22</td>            <td style=3D"text-align:center"></td>            <=
+td style=3D"text-align:center">8.0</td>         </tr>         <tr>         =
+   <td style=3D"text-align:center">21</td>            <td style=3D"text-ali=
+gn:center">Cucumber</td>            <td style=3D"text-align:center">Crisp a=
+nd hydrating cucumbers, ideal for salads, snacks, o            <td style=3D=
+"text-align:center">groceries</td>            <td style=3D"text-align:cente=
+r">1.49</td>            <td style=3D"text-align:center">22</td>            =
+<td style=3D"text-align:center"></td>            <td style=3D"text-align:ce=
+nter">9.0</td>         </tr>         <tr>            <td style=3D"text-alig=
+n:center">22</td>            <td style=3D"text-align:center">Dog Food</td> =
+           <td style=3D"text-align:center">Specially formulated dog food de=
+signed to provide essentia            <td style=3D"text-align:center">groce=
+ries</td>            <td style=3D"text-align:center">10.99</td>            =
+<td style=3D"text-align:center">40</td>            <td style=3D"text-align:=
+center"></td>            <td style=3D"text-align:center">2.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">23</td>       =
+     <td style=3D"text-align:center">Eggs</td>            <td style=3D"text=
+-align:center">Fresh eggs, a versatile ingredient for baking, cooking, or  =
+          <td style=3D"text-align:center">groceries</td>            <td sty=
+le=3D"text-align:center">2.99</td>            <td style=3D"text-align:cente=
+r">10</td>            <td style=3D"text-align:center"></td>            <td =
+style=3D"text-align:center">4.0</td>         </tr>         <tr>            =
+<td style=3D"text-align:center">24</td>            <td style=3D"text-align:=
+center">Fish Steak</td>            <td style=3D"text-align:center">Quality =
+fish steak, suitable for grilling, baking, or pan-            <td style=3D"=
+text-align:center">groceries</td>            <td style=3D"text-align:center=
+">14.99</td>            <td style=3D"text-align:center">99</td>            =
+<td style=3D"text-align:center"></td>            <td style=3D"text-align:ce=
+nter">8.0</td>         </tr>         <tr>            <td style=3D"text-alig=
+n:center">25</td>            <td style=3D"text-align:center">Green Bell Pep=
+per</td>            <td style=3D"text-align:center">Fresh and vibrant green=
+ bell pepper, perfect for adding co            <td style=3D"text-align:cent=
+er">groceries</td>            <td style=3D"text-align:center">1.29</td>    =
+        <td style=3D"text-align:center">89</td>            <td style=3D"tex=
+t-align:center"></td>            <td style=3D"text-align:center">7.0</td>  =
+       </tr>         <tr>            <td style=3D"text-align:center">26</td=
+>            <td style=3D"text-align:center">Green Chili Pepper</td>       =
+     <td style=3D"text-align:center">Spicy green chili pepper, ideal for ad=
+ding heat to your fa            <td style=3D"text-align:center">groceries</=
+td>            <td style=3D"text-align:center">0.99</td>            <td sty=
+le=3D"text-align:center">8</td>            <td style=3D"text-align:center">=
+</td>            <td style=3D"text-align:center">2.0</td>         </tr>    =
+     <tr>            <td style=3D"text-align:center">27</td>            <td=
+ style=3D"text-align:center">Honey Jar</td>            <td style=3D"text-al=
+ign:center">Pure and natural honey in a convenient jar, perfect for sw     =
+       <td style=3D"text-align:center">groceries</td>            <td style=
+=3D"text-align:center">6.99</td>            <td style=3D"text-align:center"=
+>25</td>            <td style=3D"text-align:center"></td>            <td st=
+yle=3D"text-align:center">9.0</td>         </tr>         <tr>            <t=
+d style=3D"text-align:center">28</td>            <td style=3D"text-align:ce=
+nter">Ice Cream</td>            <td style=3D"text-align:center">Creamy and =
+delicious ice cream, available in various flavo            <td style=3D"tex=
+t-align:center">groceries</td>            <td style=3D"text-align:center">5=
+.49</td>            <td style=3D"text-align:center">76</td>            <td =
+style=3D"text-align:center"></td>            <td style=3D"text-align:center=
+">5.0</td>         </tr>         <tr>            <td style=3D"text-align:ce=
+nter">29</td>            <td style=3D"text-align:center">Juice</td>        =
+    <td style=3D"text-align:center">Refreshing fruit juice, packed with vit=
+amins and great for            <td style=3D"text-align:center">groceries</t=
+d>            <td style=3D"text-align:center">3.99</td>            <td styl=
+e=3D"text-align:center">99</td>            <td style=3D"text-align:center">=
+</td>            <td style=3D"text-align:center">2.0</td>         </tr>    =
+     <tr>            <td style=3D"text-align:center">30</td>            <td=
+ style=3D"text-align:center">Kiwi</td>            <td style=3D"text-align:c=
+enter">Nutrient-rich kiwi, perfect for snacking or adding a tropi          =
+  <td style=3D"text-align:center">groceries</td>            <td style=3D"te=
+xt-align:center">2.49</td>            <td style=3D"text-align:center">1</td=
+>            <td style=3D"text-align:center"></td>            <td style=3D"=
+text-align:center">8.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">31</td>            <td style=3D"text-align:center">L=
+emon</td>            <td style=3D"text-align:center">Zesty and tangy lemons=
+, versatile for cooking, baking, or             <td style=3D"text-align:cen=
+ter">groceries</td>            <td style=3D"text-align:center">0.79</td>   =
+         <td style=3D"text-align:center">0</td>            <td style=3D"tex=
+t-align:center"></td>            <td style=3D"text-align:center">10.0</td> =
+        </tr>         <tr>            <td style=3D"text-align:center">32</t=
+d>            <td style=3D"text-align:center">Milk</td>            <td styl=
+e=3D"text-align:center">Fresh and nutritious milk, a staple for various rec=
+ipes an            <td style=3D"text-align:center">groceries</td>          =
+  <td style=3D"text-align:center">3.49</td>            <td style=3D"text-al=
+ign:center">57</td>            <td style=3D"text-align:center"></td>       =
+     <td style=3D"text-align:center">1.0</td>         </tr>         <tr>   =
+         <td style=3D"text-align:center">33</td>            <td style=3D"te=
+xt-align:center">Mulberry</td>            <td style=3D"text-align:center">S=
+weet and juicy mulberries, perfect for snacking or adding            <td st=
+yle=3D"text-align:center">groceries</td>            <td style=3D"text-align=
+:center">4.99</td>            <td style=3D"text-align:center">79</td>      =
+      <td style=3D"text-align:center"></td>            <td style=3D"text-al=
+ign:center">4.0</td>         </tr>         <tr>            <td style=3D"tex=
+t-align:center">34</td>            <td style=3D"text-align:center">Nescafe =
+Coffee</td>            <td style=3D"text-align:center">Quality coffee from =
+Nescafe, available in various blends f            <td style=3D"text-align:c=
+enter">groceries</td>            <td style=3D"text-align:center">7.99</td> =
+           <td style=3D"text-align:center">22</td>            <td style=3D"=
+text-align:center"></td>            <td style=3D"text-align:center">9.0</td=
+>         </tr>         <tr>            <td style=3D"text-align:center">35<=
+/td>            <td style=3D"text-align:center">Potatoes</td>            <t=
+d style=3D"text-align:center">Versatile and starchy potatoes, great for roa=
+sting, mashin            <td style=3D"text-align:center">groceries</td>    =
+        <td style=3D"text-align:center">2.29</td>            <td style=3D"t=
+ext-align:center">8</td>            <td style=3D"text-align:center"></td>  =
+          <td style=3D"text-align:center">9.0</td>         </tr>         <t=
+r>            <td style=3D"text-align:center">36</td>            <td style=
+=3D"text-align:center">Protein Powder</td>            <td style=3D"text-ali=
+gn:center">Nutrient-packed protein powder, ideal for supplementing yo      =
+      <td style=3D"text-align:center">groceries</td>            <td style=
+=3D"text-align:center">19.99</td>            <td style=3D"text-align:center=
+">65</td>            <td style=3D"text-align:center"></td>            <td s=
+tyle=3D"text-align:center">2.0</td>         </tr>         <tr>            <=
+td style=3D"text-align:center">37</td>            <td style=3D"text-align:c=
+enter">Red Onions</td>            <td style=3D"text-align:center">Flavorful=
+ and aromatic red onions, perfect for adding dept            <td style=3D"t=
+ext-align:center">groceries</td>            <td style=3D"text-align:center"=
+>1.99</td>            <td style=3D"text-align:center">86</td>            <t=
+d style=3D"text-align:center"></td>            <td style=3D"text-align:cent=
+er">2.0</td>         </tr>         <tr>            <td style=3D"text-align:=
+center">38</td>            <td style=3D"text-align:center">Rice</td>       =
+     <td style=3D"text-align:center">High-quality rice, a staple for variou=
+s cuisines and a ver            <td style=3D"text-align:center">groceries</=
+td>            <td style=3D"text-align:center">5.99</td>            <td sty=
+le=3D"text-align:center">49</td>            <td style=3D"text-align:center"=
+></td>            <td style=3D"text-align:center">1.0</td>         </tr>   =
+      <tr>            <td style=3D"text-align:center">39</td>            <t=
+d style=3D"text-align:center">Soft Drinks</td>            <td style=3D"text=
+-align:center">Assorted soft drinks in various flavors, perfect for refre  =
+          <td style=3D"text-align:center">groceries</td>            <td sty=
+le=3D"text-align:center">1.99</td>            <td style=3D"text-align:cente=
+r">78</td>            <td style=3D"text-align:center"></td>            <td =
+style=3D"text-align:center">9.0</td>         </tr>         <tr>            =
+<td style=3D"text-align:center">40</td>            <td style=3D"text-align:=
+center">Strawberry</td>            <td style=3D"text-align:center">Sweet an=
+d succulent strawberries, great for snacking, dess            <td style=3D"=
+text-align:center">groceries</td>            <td style=3D"text-align:center=
+">3.99</td>            <td style=3D"text-align:center">9</td>            <t=
+d style=3D"text-align:center"></td>            <td style=3D"text-align:cent=
+er">4.0</td>         </tr>         <tr>            <td style=3D"text-align:=
+center">41</td>            <td style=3D"text-align:center">Tissue Paper Box=
+</td>            <td style=3D"text-align:center">Convenient tissue paper bo=
+x for everyday use, providing so            <td style=3D"text-align:center"=
+>groceries</td>            <td style=3D"text-align:center">2.49</td>       =
+     <td style=3D"text-align:center">97</td>            <td style=3D"text-a=
+lign:center"></td>            <td style=3D"text-align:center">3.0</td>     =
+    </tr>         <tr>            <td style=3D"text-align:center">42</td>  =
+          <td style=3D"text-align:center">Water</td>            <td style=
+=3D"text-align:center">Pure and refreshing bottled water, essential for sta=
+ying h            <td style=3D"text-align:center">groceries</td>           =
+ <td style=3D"text-align:center">0.99</td>            <td style=3D"text-ali=
+gn:center">95</td>            <td style=3D"text-align:center"></td>        =
+    <td style=3D"text-align:center">2.0</td>         </tr>         <tr>    =
+        <td style=3D"text-align:center">43</td>            <td style=3D"tex=
+t-align:center">Decoration Swing</td>            <td style=3D"text-align:ce=
+nter">The Decoration Swing is a charming addition to your home d           =
+    and whimsy to any room.            </td>            <td style=3D"text-a=
+lign:center">home-decoration</td>            <td style=3D"text-align:center=
+">59.99</td>            <td style=3D"text-align:center">62</td>            =
+<td style=3D"text-align:center"></td>            <td style=3D"text-align:ce=
+nter">8.0</td>         </tr>         <tr>            <td style=3D"text-alig=
+n:center">44</td>            <td style=3D"text-align:center">Family Tree Ph=
+oto Frame</td>            <td style=3D"text-align:center">The Family Tree P=
+hoto Frame is a sentimental and stylish w               slots, it tells the=
+ story of your loved ones.            </td>            <td style=3D"text-al=
+ign:center">home-decoration</td>            <td style=3D"text-align:center"=
+>29.99</td>            <td style=3D"text-align:center">34</td>            <=
+td style=3D"text-align:center"></td>            <td style=3D"text-align:cen=
+ter">4.0</td>         </tr>         <tr>            <td style=3D"text-align=
+:center">45</td>            <td style=3D"text-align:center">House Showpiece=
+ Plant</td>            <td style=3D"text-align:center">The House Showpiece =
+Plant is an artificial plant that brin               It adds greenery and s=
+tyle to any space.            </td>            <td style=3D"text-align:cent=
+er">home-decoration</td>            <td style=3D"text-align:center">39.99</=
+td>            <td style=3D"text-align:center">89</td>            <td style=
+=3D"text-align:center"></td>            <td style=3D"text-align:center">9.0=
+</td>         </tr>         <tr>            <td style=3D"text-align:center"=
+>46</td>            <td style=3D"text-align:center">Plant Pot</td>         =
+   <td style=3D"text-align:center">The Plant Pot is a stylish container for=
+ your favorite pla               garden, adding a modern touch to your plan=
+t display.            </td>            <td style=3D"text-align:center">home=
+-decoration</td>            <td style=3D"text-align:center">14.99</td>     =
+       <td style=3D"text-align:center">70</td>            <td style=3D"text=
+-align:center"></td>            <td style=3D"text-align:center">8.0</td>   =
+      </tr>         <tr>            <td style=3D"text-align:center">47</td>=
+            <td style=3D"text-align:center">Table Lamp</td>            <td =
+style=3D"text-align:center">The Table Lamp is a functional and decorative l=
+ighting sol               ambient and task lighting, enhancing the atmosphe=
+re.            </td>            <td style=3D"text-align:center">home-decora=
+tion</td>            <td style=3D"text-align:center">49.99</td>            =
+<td style=3D"text-align:center">84</td>            <td style=3D"text-align:=
+center"></td>            <td style=3D"text-align:center">2.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">48</td>       =
+     <td style=3D"text-align:center">Bamboo Spatula</td>            <td sty=
+le=3D"text-align:center">The Bamboo Spatula is a versatile kitchen tool mad=
+e from e               dishes.            </td>            <td style=3D"tex=
+t-align:center">kitchen-accessories</td>            <td style=3D"text-align=
+:center">7.99</td>            <td style=3D"text-align:center">0</td>       =
+     <td style=3D"text-align:center"></td>            <td style=3D"text-ali=
+gn:center">4.0</td>         </tr>         <tr>            <td style=3D"text=
+-align:center">49</td>            <td style=3D"text-align:center">Black Alu=
+minium Cup</td>            <td style=3D"text-align:center">The Black Alumin=
+ium Cup is a stylish and durable cup suita               a modern touch to =
+your drinkware collection.            </td>            <td style=3D"text-al=
+ign:center">kitchen-accessories</td>            <td style=3D"text-align:cen=
+ter">5.99</td>            <td style=3D"text-align:center">42</td>          =
+  <td style=3D"text-align:center"></td>            <td style=3D"text-align:=
+center">8.0</td>         </tr>         <tr>            <td style=3D"text-al=
+ign:center">50</td>            <td style=3D"text-align:center">Black Whisk<=
+/td>            <td style=3D"text-align:center">The Black Whisk is a kitche=
+n essential for whisking and be               a practical and stylish tool.=
+            </td>            <td style=3D"text-align:center">kitchen-access=
+ories</td>            <td style=3D"text-align:center">9.99</td>            =
+<td style=3D"text-align:center">17</td>            <td style=3D"text-align:=
+center"></td>            <td style=3D"text-align:center">6.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">51</td>       =
+     <td style=3D"text-align:center">Boxed Blender</td>            <td styl=
+e=3D"text-align:center">The Boxed Blender is a powerful and compact blender=
+ perfec               functions make it a versatile kitchen appliance.     =
+       </td>            <td style=3D"text-align:center">kitchen-accessories=
+</td>            <td style=3D"text-align:center">39.99</td>            <td =
+style=3D"text-align:center">81</td>            <td style=3D"text-align:cent=
+er"></td>            <td style=3D"text-align:center">10.0</td>         </tr=
+>         <tr>            <td style=3D"text-align:center">52</td>          =
+  <td style=3D"text-align:center">Carbon Steel Wok</td>            <td styl=
+e=3D"text-align:center">The Carbon Steel Wok is a versatile cooking pan sui=
+table f               ensures even heat distribution for delicious meals.  =
+          </td>            <td style=3D"text-align:center">kitchen-accessor=
+ies</td>            <td style=3D"text-align:center">29.99</td>            <=
+td style=3D"text-align:center">2</td>            <td style=3D"text-align:ce=
+nter"></td>            <td style=3D"text-align:center">4.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">53</td>         =
+   <td style=3D"text-align:center">Chopping Board</td>            <td style=
+=3D"text-align:center">The Chopping Board is an essential kitchen accessory=
+ for f               and hygienic surface for cutting and chopping.        =
+    </td>            <td style=3D"text-align:center">kitchen-accessories</t=
+d>            <td style=3D"text-align:center">12.99</td>            <td sty=
+le=3D"text-align:center">53</td>            <td style=3D"text-align:center"=
+></td>            <td style=3D"text-align:center">3.0</td>         </tr>   =
+      <tr>            <td style=3D"text-align:center">54</td>            <t=
+d style=3D"text-align:center">Citrus Squeezer Yellow</td>            <td st=
+yle=3D"text-align:center">The Citrus Squeezer in Yellow is a handy tool for=
+ extracti               to your kitchen gadgets.            </td>          =
+  <td style=3D"text-align:center">kitchen-accessories</td>            <td s=
+tyle=3D"text-align:center">8.99</td>            <td style=3D"text-align:cen=
+ter">59</td>            <td style=3D"text-align:center"></td>            <t=
+d style=3D"text-align:center">9.0</td>         </tr>         <tr>          =
+  <td style=3D"text-align:center">55</td>            <td style=3D"text-alig=
+n:center">Egg Slicer</td>            <td style=3D"text-align:center">The Eg=
+g Slicer is a convenient tool for slicing boiled egg               where sl=
+iced eggs are desired.            </td>            <td style=3D"text-align:=
+center">kitchen-accessories</td>            <td style=3D"text-align:center"=
+>6.99</td>            <td style=3D"text-align:center">30</td>            <t=
+d style=3D"text-align:center"></td>            <td style=3D"text-align:cent=
+er">5.0</td>         </tr>         <tr>            <td style=3D"text-align:=
+center">56</td>            <td style=3D"text-align:center">Electric Stove</=
+td>            <td style=3D"text-align:center">The Electric Stove provides =
+a portable and efficient cooki               surface for various culinary n=
+eeds.            </td>            <td style=3D"text-align:center">kitchen-a=
+ccessories</td>            <td style=3D"text-align:center">49.99</td>      =
+      <td style=3D"text-align:center">41</td>            <td style=3D"text-=
+align:center"></td>            <td style=3D"text-align:center">9.0</td>    =
+     </tr>         <tr>            <td style=3D"text-align:center">57</td> =
+           <td style=3D"text-align:center">Fine Mesh Strainer</td>         =
+   <td style=3D"text-align:center">The Fine Mesh Strainer is a versatile to=
+ol for straining l               filtering for smooth cooking and baking.  =
+          </td>            <td style=3D"text-align:center">kitchen-accessor=
+ies</td>            <td style=3D"text-align:center">9.99</td>            <t=
+d style=3D"text-align:center">13</td>            <td style=3D"text-align:ce=
+nter"></td>            <td style=3D"text-align:center">6.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">58</td>         =
+   <td style=3D"text-align:center">Fork</td>            <td style=3D"text-a=
+lign:center">The Fork is a classic utensil for various dining and servi    =
+           choice for everyday use.            </td>            <td style=
+=3D"text-align:center">kitchen-accessories</td>            <td style=3D"tex=
+t-align:center">3.99</td>            <td style=3D"text-align:center">10</td=
+>            <td style=3D"text-align:center"></td>            <td style=3D"=
+text-align:center">6.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">59</td>            <td style=3D"text-align:center">G=
+lass</td>            <td style=3D"text-align:center">The Glass is a versati=
+le and elegant drinking vessel suita               the colors and textures =
+of your drinks.            </td>            <td style=3D"text-align:center"=
+>kitchen-accessories</td>            <td style=3D"text-align:center">4.99</=
+td>            <td style=3D"text-align:center">68</td>            <td style=
+=3D"text-align:center"></td>            <td style=3D"text-align:center">5.0=
+</td>         </tr>         <tr>            <td style=3D"text-align:center"=
+>60</td>            <td style=3D"text-align:center">Grater Black</td>      =
+      <td style=3D"text-align:center">The Grater in Black is a handy kitche=
+n tool for grating ch               food preparation efficient and easy.   =
+         </td>            <td style=3D"text-align:center">kitchen-accessori=
+es</td>            <td style=3D"text-align:center">10.99</td>            <t=
+d style=3D"text-align:center">80</td>            <td style=3D"text-align:ce=
+nter"></td>            <td style=3D"text-align:center">3.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">61</td>         =
+   <td style=3D"text-align:center">Hand Blender</td>            <td style=
+=3D"text-align:center">The Hand Blender is a versatile kitchen appliance fo=
+r blen               make it a convenient tool for various recipes.        =
+    </td>            <td style=3D"text-align:center">kitchen-accessories</t=
+d>            <td style=3D"text-align:center">34.99</td>            <td sty=
+le=3D"text-align:center">8</td>            <td style=3D"text-align:center">=
+</td>            <td style=3D"text-align:center">4.0</td>         </tr>    =
+     <tr>            <td style=3D"text-align:center">62</td>            <td=
+ style=3D"text-align:center">Ice Cube Tray</td>            <td style=3D"tex=
+t-align:center">The Ice Cube Tray is a practical accessory for making ice  =
+              adding a fun element to your beverages.            </td>     =
+       <td style=3D"text-align:center">kitchen-accessories</td>            =
+<td style=3D"text-align:center">5.99</td>            <td style=3D"text-alig=
+n:center">81</td>            <td style=3D"text-align:center"></td>         =
+   <td style=3D"text-align:center">8.0</td>         </tr>         <tr>     =
+       <td style=3D"text-align:center">63</td>            <td style=3D"text=
+-align:center">Kitchen Sieve</td>            <td style=3D"text-align:center=
+">The Kitchen Sieve is a versatile tool for sifting and stra               =
+results in your cooking and baking.            </td>            <td style=
+=3D"text-align:center">kitchen-accessories</td>            <td style=3D"tex=
+t-align:center">7.99</td>            <td style=3D"text-align:center">33</td=
+>            <td style=3D"text-align:center"></td>            <td style=3D"=
+text-align:center">5.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">64</td>            <td style=3D"text-align:center">K=
+nife</td>            <td style=3D"text-align:center">The Knife is an essent=
+ial kitchen tool for chopping, slici               choice for food preparat=
+ion.            </td>            <td style=3D"text-align:center">kitchen-ac=
+cessories</td>            <td style=3D"text-align:center">14.99</td>       =
+     <td style=3D"text-align:center">59</td>            <td style=3D"text-a=
+lign:center"></td>            <td style=3D"text-align:center">7.0</td>     =
+    </tr>         <tr>            <td style=3D"text-align:center">65</td>  =
+          <td style=3D"text-align:center">Lunch Box</td>            <td sty=
+le=3D"text-align:center">The Lunch Box is a convenient and portable contain=
+er for p               foods, it's perfect for on-the-go dining.           =
+ </td>            <td style=3D"text-align:center">kitchen-accessories</td> =
+           <td style=3D"text-align:center">12.99</td>            <td style=
+=3D"text-align:center">26</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">1.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">66</td>            <td =
+style=3D"text-align:center">Microwave Oven</td>            <td style=3D"tex=
+t-align:center">The Microwave Oven is a versatile kitchen appliance for qu =
+              size makes it suitable for various kitchen setups.           =
+ </td>            <td style=3D"text-align:center">kitchen-accessories</td> =
+           <td style=3D"text-align:center">89.99</td>            <td style=
+=3D"text-align:center">27</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">8.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">67</td>            <td =
+style=3D"text-align:center">Mug Tree Stand</td>            <td style=3D"tex=
+t-align:center">The Mug Tree Stand is a stylish and space-saving solution  =
+              and neatly displayed in your kitchen.            </td>       =
+     <td style=3D"text-align:center">kitchen-accessories</td>            <t=
+d style=3D"text-align:center">15.99</td>            <td style=3D"text-align=
+:center">93</td>            <td style=3D"text-align:center"></td>          =
+  <td style=3D"text-align:center">7.0</td>         </tr>         <tr>      =
+      <td style=3D"text-align:center">68</td>            <td style=3D"text-=
+align:center">Pan</td>            <td style=3D"text-align:center">The Pan i=
+s a versatile and essential cookware item for fry               ensures eas=
+y food release and cleanup.            </td>            <td style=3D"text-a=
+lign:center">kitchen-accessories</td>            <td style=3D"text-align:ce=
+nter">24.99</td>            <td style=3D"text-align:center">40</td>        =
+    <td style=3D"text-align:center"></td>            <td style=3D"text-alig=
+n:center">7.0</td>         </tr>         <tr>            <td style=3D"text-=
+align:center">69</td>            <td style=3D"text-align:center">Plate</td>=
+            <td style=3D"text-align:center">The Plate is a classic and esse=
+ntial dishware item for ser               everyday use or special occasions=
+.            </td>            <td style=3D"text-align:center">kitchen-acces=
+sories</td>            <td style=3D"text-align:center">3.99</td>           =
+ <td style=3D"text-align:center">30</td>            <td style=3D"text-align=
+:center"></td>            <td style=3D"text-align:center">8.0</td>         =
+</tr>         <tr>            <td style=3D"text-align:center">70</td>      =
+      <td style=3D"text-align:center">Red Tongs</td>            <td style=
+=3D"text-align:center">The Red Tongs are versatile kitchen tongs suitable f=
+or var               excitement to your kitchen utensils.            </td> =
+           <td style=3D"text-align:center">kitchen-accessories</td>        =
+    <td style=3D"text-align:center">6.99</td>            <td style=3D"text-=
+align:center">15</td>            <td style=3D"text-align:center"></td>     =
+       <td style=3D"text-align:center">3.0</td>         </tr>         <tr> =
+           <td style=3D"text-align:center">71</td>            <td style=3D"=
+text-align:center">Silver Pot With Glass Cap</td>            <td style=3D"t=
+ext-align:center">The Silver Pot with Glass Cap is a stylish and functional=
+                Its glass cap allows you to monitor cooking progress.      =
+      </td>            <td style=3D"text-align:center">kitchen-accessories<=
+/td>            <td style=3D"text-align:center">39.99</td>            <td s=
+tyle=3D"text-align:center">37</td>            <td style=3D"text-align:cente=
+r"></td>            <td style=3D"text-align:center">9.0</td>         </tr> =
+        <tr>            <td style=3D"text-align:center">72</td>            =
+<td style=3D"text-align:center">Slotted Turner</td>            <td style=3D=
+"text-align:center">The Slotted Turner is a kitchen utensil designed for fl=
+ipp               to drain, making it ideal for frying and saut=C3=A9ing.  =
+          </td>            <td style=3D"text-align:center">kitchen-accessor=
+ies</td>            <td style=3D"text-align:center">8.99</td>            <t=
+d style=3D"text-align:center">36</td>            <td style=3D"text-align:ce=
+nter"></td>            <td style=3D"text-align:center">4.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">73</td>         =
+   <td style=3D"text-align:center">Spice Rack</td>            <td style=3D"=
+text-align:center">The Spice Rack is a convenient organizer for your spices=
+ a               arranged with this stylish spice rack.            </td>   =
+         <td style=3D"text-align:center">kitchen-accessories</td>          =
+  <td style=3D"text-align:center">19.99</td>            <td style=3D"text-a=
+lign:center">24</td>            <td style=3D"text-align:center"></td>      =
+      <td style=3D"text-align:center">8.0</td>         </tr>         <tr>  =
+          <td style=3D"text-align:center">74</td>            <td style=3D"t=
+ext-align:center">Spoon</td>            <td style=3D"text-align:center">The=
+ Spoon is a versatile kitchen utensil for stirring, ser               make =
+it an essential tool for every kitchen.            </td>            <td sty=
+le=3D"text-align:center">kitchen-accessories</td>            <td style=3D"t=
+ext-align:center">4.99</td>            <td style=3D"text-align:center">51</=
+td>            <td style=3D"text-align:center"></td>            <td style=
+=3D"text-align:center">9.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">75</td>            <td style=3D"text-align:cente=
+r">Tray</td>            <td style=3D"text-align:center">The Tray is a funct=
+ional and decorative item for serving s               accessory for enterta=
+ining guests.            </td>            <td style=3D"text-align:center">k=
+itchen-accessories</td>            <td style=3D"text-align:center">16.99</t=
+d>            <td style=3D"text-align:center">48</td>            <td style=
+=3D"text-align:center"></td>            <td style=3D"text-align:center">8.0=
+</td>         </tr>         <tr>            <td style=3D"text-align:center"=
+>76</td>            <td style=3D"text-align:center">Wooden Rolling Pin</td>=
+            <td style=3D"text-align:center">The Wooden Rolling Pin is a cla=
+ssic kitchen tool for rolli               it easy to achieve uniform thickn=
+ess.            </td>            <td style=3D"text-align:center">kitchen-ac=
+cessories</td>            <td style=3D"text-align:center">11.99</td>       =
+     <td style=3D"text-align:center">80</td>            <td style=3D"text-a=
+lign:center"></td>            <td style=3D"text-align:center">7.0</td>     =
+    </tr>         <tr>            <td style=3D"text-align:center">77</td>  =
+          <td style=3D"text-align:center">Yellow Peeler</td>            <td=
+ style=3D"text-align:center">The Yellow Peeler is a handy tool for peeling =
+fruits and v               to your kitchen gadgets.            </td>       =
+     <td style=3D"text-align:center">kitchen-accessories</td>            <t=
+d style=3D"text-align:center">5.99</td>            <td style=3D"text-align:=
+center">86</td>            <td style=3D"text-align:center"></td>           =
+ <td style=3D"text-align:center">4.0</td>         </tr>         <tr>       =
+     <td style=3D"text-align:center">78</td>            <td style=3D"text-a=
+lign:center">Apple MacBook Pro 14 Inch Space Grey</td>            <td style=
+=3D"text-align:center">The MacBook Pro 14 Inch in Space Grey is a powerful =
+and sl               and a stunning Retina display.            </td>       =
+     <td style=3D"text-align:center">laptops</td>            <td style=3D"t=
+ext-align:center">1999.99</td>            <td style=3D"text-align:center">3=
+9</td>            <td style=3D"text-align:center">Apple</td>            <td=
+ style=3D"text-align:center">4.0</td>         </tr>         <tr>           =
+ <td style=3D"text-align:center">79</td>            <td style=3D"text-align=
+:center">Asus Zenbook Pro Dual Screen Laptop</td>            <td style=3D"t=
+ext-align:center">The Asus Zenbook Pro Dual Screen Laptop is a high-perform=
+a               for creative professionals.            </td>            <td=
+ style=3D"text-align:center">laptops</td>            <td style=3D"text-alig=
+n:center">1799.99</td>            <td style=3D"text-align:center">38</td>  =
+          <td style=3D"text-align:center">Asus</td>            <td style=3D=
+"text-align:center">8.0</td>         </tr>         <tr>            <td styl=
+e=3D"text-align:center">80</td>            <td style=3D"text-align:center">=
+Huawei Matebook X Pro</td>            <td style=3D"text-align:center">The H=
+uawei Matebook X Pro is a slim and stylish laptop wit               for use=
+rs on the go.            </td>            <td style=3D"text-align:center">l=
+aptops</td>            <td style=3D"text-align:center">1399.99</td>        =
+    <td style=3D"text-align:center">34</td>            <td style=3D"text-al=
+ign:center">Huawei</td>            <td style=3D"text-align:center">9.0</td>=
+         </tr>         <tr>            <td style=3D"text-align:center">81</=
+td>            <td style=3D"text-align:center">Lenovo Yoga 920</td>        =
+    <td style=3D"text-align:center">The Lenovo Yoga 920 is a 2-in-1 convert=
+ible laptop with a                versatility and portability.            <=
+/td>            <td style=3D"text-align:center">laptops</td>            <td=
+ style=3D"text-align:center">1099.99</td>            <td style=3D"text-alig=
+n:center">71</td>            <td style=3D"text-align:center">Lenovo</td>   =
+         <td style=3D"text-align:center">7.0</td>         </tr>         <tr=
+>            <td style=3D"text-align:center">82</td>            <td style=
+=3D"text-align:center">New DELL XPS 13 9300 Laptop</td>            <td styl=
+e=3D"text-align:center">The New DELL XPS 13 9300 Laptop is a compact and po=
+werful                high-end performance for various tasks.            </=
+td>            <td style=3D"text-align:center">laptops</td>            <td =
+style=3D"text-align:center">1499.99</td>            <td style=3D"text-align=
+:center">18</td>            <td style=3D"text-align:center">Dell</td>      =
+      <td style=3D"text-align:center">10.0</td>         </tr>         <tr> =
+           <td style=3D"text-align:center">83</td>            <td style=3D"=
+text-align:center">Blue &amp; Black Check Shirt</td>            <td style=
+=3D"text-align:center">The Blue &amp; Black Check Shirt is a stylish and co=
+mforta               fabric, it's suitable for both casual and semi-formal =
+occasions.            </td>            <td style=3D"text-align:center">mens=
+-shirts</td>            <td style=3D"text-align:center">29.99</td>         =
+   <td style=3D"text-align:center">44</td>            <td style=3D"text-ali=
+gn:center">Fashion Trends</td>            <td style=3D"text-align:center">6=
+.0</td>         </tr>         <tr>            <td style=3D"text-align:cente=
+r">84</td>            <td style=3D"text-align:center">Gigabyte Aorus Men Ts=
+hirt</td>            <td style=3D"text-align:center">The Gigabyte Aorus Men=
+ Tshirt is a cool and casual shirt f               perfect for expressing y=
+our gaming style.            </td>            <td style=3D"text-align:cente=
+r">mens-shirts</td>            <td style=3D"text-align:center">24.99</td>  =
+          <td style=3D"text-align:center">64</td>            <td style=3D"t=
+ext-align:center">Gigabyte</td>            <td style=3D"text-align:center">=
+2.0</td>         </tr>         <tr>            <td style=3D"text-align:cent=
+er">85</td>            <td style=3D"text-align:center">Man Plaid Shirt</td>=
+            <td style=3D"text-align:center">The Man Plaid Shirt is a timele=
+ss and versatile men's shir               make it a wardrobe essential for =
+various occasions.            </td>            <td style=3D"text-align:cent=
+er">mens-shirts</td>            <td style=3D"text-align:center">34.99</td> =
+           <td style=3D"text-align:center">65</td>            <td style=3D"=
+text-align:center">Classic Wear</td>            <td style=3D"text-align:cen=
+ter">1.0</td>         </tr>         <tr>            <td style=3D"text-align=
+:center">86</td>            <td style=3D"text-align:center">Man Short Sleev=
+e Shirt</td>            <td style=3D"text-align:center">The Man Short Sleev=
+e Shirt is a breezy and stylish option                for a laid-back yet p=
+olished look.            </td>            <td style=3D"text-align:center">m=
+ens-shirts</td>            <td style=3D"text-align:center">19.99</td>      =
+      <td style=3D"text-align:center">20</td>            <td style=3D"text-=
+align:center">Casual Comfort</td>            <td style=3D"text-align:center=
+">2.0</td>         </tr>         <tr>            <td style=3D"text-align:ce=
+nter">87</td>            <td style=3D"text-align:center">Men Check Shirt</t=
+d>            <td style=3D"text-align:center">The Men Check Shirt is a clas=
+sic and versatile shirt featu               adds a smart and polished touch=
+ to your wardrobe.            </td>            <td style=3D"text-align:cent=
+er">mens-shirts</td>            <td style=3D"text-align:center">27.99</td> =
+           <td style=3D"text-align:center">69</td>            <td style=3D"=
+text-align:center">Urban Chic</td>            <td style=3D"text-align:cente=
+r">1.0</td>         </tr>         <tr>            <td style=3D"text-align:c=
+enter">88</td>            <td style=3D"text-align:center">Nike Air Jordan 1=
+ Red And Black</td>            <td style=3D"text-align:center">The Nike Air=
+ Jordan 1 in Red and Black is an iconic basket               making it a fa=
+vorite among sneaker enthusiasts and athletes.            </td>            =
+<td style=3D"text-align:center">mens-shoes</td>            <td style=3D"tex=
+t-align:center">149.99</td>            <td style=3D"text-align:center">15</=
+td>            <td style=3D"text-align:center">Nike</td>            <td sty=
+le=3D"text-align:center">5.0</td>         </tr>         <tr>            <td=
+ style=3D"text-align:center">89</td>            <td style=3D"text-align:cen=
+ter">Nike Baseball Cleats</td>            <td style=3D"text-align:center">N=
+ike Baseball Cleats are designed for maximum traction and               for=
+ players during games and practices.            </td>            <td style=
+=3D"text-align:center">mens-shoes</td>            <td style=3D"text-align:c=
+enter">79.99</td>            <td style=3D"text-align:center">14</td>       =
+     <td style=3D"text-align:center">Nike</td>            <td style=3D"text=
+-align:center">7.0</td>         </tr>         <tr>            <td style=3D"=
+text-align:center">90</td>            <td style=3D"text-align:center">Puma =
+Future Rider Trainers</td>            <td style=3D"text-align:center">The P=
+uma Future Rider Trainers offer a blend of retro styl               a fashi=
+onable and comfortable option for everyday use.            </td>           =
+ <td style=3D"text-align:center">mens-shoes</td>            <td style=3D"te=
+xt-align:center">89.99</td>            <td style=3D"text-align:center">10</=
+td>            <td style=3D"text-align:center">Puma</td>            <td sty=
+le=3D"text-align:center">8.0</td>         </tr>         <tr>            <td=
+ style=3D"text-align:center">91</td>            <td style=3D"text-align:cen=
+ter">Sports Sneakers Off White &amp; Red</td>            <td style=3D"text-=
+align:center">The Sports Sneakers in Off White and Red combine style and   =
+            The red and off-white color combination adds a bold and energet=
+ic touch.            </td>            <td style=3D"text-align:center">mens-=
+shoes</td>            <td style=3D"text-align:center">119.99</td>          =
+  <td style=3D"text-align:center">73</td>            <td style=3D"text-alig=
+n:center">Off White</td>            <td style=3D"text-align:center">3.0</td=
+>         </tr>         <tr>            <td style=3D"text-align:center">92<=
+/td>            <td style=3D"text-align:center">Sports Sneakers Off White R=
+ed</td>            <td style=3D"text-align:center">Another variant of the S=
+ports Sneakers in Off White Red, f               for casual occasions.     =
+       </td>            <td style=3D"text-align:center">mens-shoes</td>    =
+        <td style=3D"text-align:center">109.99</td>            <td style=3D=
+"text-align:center">75</td>            <td style=3D"text-align:center">Off =
+White</td>            <td style=3D"text-align:center">4.0</td>         </tr=
+>         <tr>            <td style=3D"text-align:center">93</td>          =
+  <td style=3D"text-align:center">Brown Leather Belt Watch</td>            =
+<td style=3D"text-align:center">The Brown Leather Belt Watch is a stylish t=
+imepiece with a               it adds a touch of sophistication to your loo=
+k.            </td>            <td style=3D"text-align:center">mens-watches=
+</td>            <td style=3D"text-align:center">89.99</td>            <td =
+style=3D"text-align:center">69</td>            <td style=3D"text-align:cent=
+er">Fashion Timepieces</td>            <td style=3D"text-align:center">10.0=
+</td>         </tr>         <tr>            <td style=3D"text-align:center"=
+>94</td>            <td style=3D"text-align:center">Longines Master Collect=
+ion</td>            <td style=3D"text-align:center">The Longines Master Col=
+lection is an elegant and refined w               design, it's a symbol of =
+luxury and sophistication.            </td>            <td style=3D"text-al=
+ign:center">mens-watches</td>            <td style=3D"text-align:center">14=
+99.99</td>            <td style=3D"text-align:center">65</td>            <t=
+d style=3D"text-align:center">Longines</td>            <td style=3D"text-al=
+ign:center">2.0</td>         </tr>         <tr>            <td style=3D"tex=
+t-align:center">95</td>            <td style=3D"text-align:center">Rolex Ce=
+llini Date Black Dial</td>            <td style=3D"text-align:center">The R=
+olex Cellini Date with Black Dial is a classic and pr               sophist=
+ication and is a symbol of Rolex's heritage.            </td>            <t=
+d style=3D"text-align:center">mens-watches</td>            <td style=3D"tex=
+t-align:center">8999.99</td>            <td style=3D"text-align:center">84<=
+/td>            <td style=3D"text-align:center">Rolex</td>            <td s=
+tyle=3D"text-align:center">6.0</td>         </tr>         <tr>            <=
+td style=3D"text-align:center">96</td>            <td style=3D"text-align:c=
+enter">Rolex Cellini Moonphase</td>            <td style=3D"text-align:cent=
+er">The Rolex Cellini Moonphase is a masterpiece of horology,              =
+  Rolex's commitment to precision and elegance.            </td>           =
+ <td style=3D"text-align:center">mens-watches</td>            <td style=3D"=
+text-align:center">12999.99</td>            <td style=3D"text-align:center"=
+>33</td>            <td style=3D"text-align:center">Rolex</td>            <=
+td style=3D"text-align:center">5.0</td>         </tr>         <tr>         =
+   <td style=3D"text-align:center">97</td>            <td style=3D"text-ali=
+gn:center">Rolex Datejust</td>            <td style=3D"text-align:center">T=
+he Rolex Datejust is an iconic and versatile timepiece wi               it'=
+s a symbol of Rolex's watchmaking excellence.            </td>            <=
+td style=3D"text-align:center">mens-watches</td>            <td style=3D"te=
+xt-align:center">10999.99</td>            <td style=3D"text-align:center">1=
+1</td>            <td style=3D"text-align:center">Rolex</td>            <td=
+ style=3D"text-align:center">5.0</td>         </tr>         <tr>           =
+ <td style=3D"text-align:center">98</td>            <td style=3D"text-align=
+:center">Rolex Submariner Watch</td>            <td style=3D"text-align:cen=
+ter">The Rolex Submariner is a legendary dive watch with a rich            =
+   symbol of adventure and exploration.            </td>            <td sty=
+le=3D"text-align:center">mens-watches</td>            <td style=3D"text-ali=
+gn:center">13999.99</td>            <td style=3D"text-align:center">35</td>=
+            <td style=3D"text-align:center">Rolex</td>            <td style=
+=3D"text-align:center">5.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">99</td>            <td style=3D"text-align:cente=
+r">Amazon Echo Plus</td>            <td style=3D"text-align:center">The Ama=
+zon Echo Plus is a smart speaker with built-in Alex               a hub for=
+ controlling smart home devices.            </td>            <td style=3D"t=
+ext-align:center">mobile-accessories</td>            <td style=3D"text-alig=
+n:center">99.99</td>            <td style=3D"text-align:center">50</td>    =
+        <td style=3D"text-align:center">Amazon</td>            <td style=3D=
+"text-align:center">7.0</td>         </tr>         <tr>            <td styl=
+e=3D"text-align:center">100</td>            <td style=3D"text-align:center"=
+>Apple Airpods</td>            <td style=3D"text-align:center">The Apple Ai=
+rpods offer a seamless wireless audio experien               they are perfe=
+ct for on-the-go listening.            </td>            <td style=3D"text-a=
+lign:center">mobile-accessories</td>            <td style=3D"text-align:cen=
+ter">129.99</td>            <td style=3D"text-align:center">93</td>        =
+    <td style=3D"text-align:center">Apple</td>            <td style=3D"text=
+-align:center">3.0</td>         </tr>         <tr>            <td style=3D"=
+text-align:center">101</td>            <td style=3D"text-align:center">Appl=
+e AirPods Max Silver</td>            <td style=3D"text-align:center">The Ap=
+ple AirPods Max in Silver are premium over-ear headp               Experien=
+ce immersive sound in style.            </td>            <td style=3D"text-=
+align:center">mobile-accessories</td>            <td style=3D"text-align:ce=
+nter">549.99</td>            <td style=3D"text-align:center">7</td>        =
+    <td style=3D"text-align:center">Apple</td>            <td style=3D"text=
+-align:center">4.0</td>         </tr>         <tr>            <td style=3D"=
+text-align:center">102</td>            <td style=3D"text-align:center">Appl=
+e Airpower Wireless Charger</td>            <td style=3D"text-align:center"=
+>The Apple AirPower Wireless Charger provides a convenient                y=
+our devices on the charging mat for effortless charging.            </td>  =
+          <td style=3D"text-align:center">mobile-accessories</td>          =
+  <td style=3D"text-align:center">79.99</td>            <td style=3D"text-a=
+lign:center">78</td>            <td style=3D"text-align:center">Apple</td> =
+           <td style=3D"text-align:center">3.0</td>         </tr>         <=
+tr>            <td style=3D"text-align:center">103</td>            <td styl=
+e=3D"text-align:center">Apple HomePod Mini Cosmic Grey</td>            <td =
+style=3D"text-align:center">The Apple HomePod Mini in Cosmic Grey is a comp=
+act smart s               with the Apple ecosystem for a smart home experie=
+nce.            </td>            <td style=3D"text-align:center">mobile-acc=
+essories</td>            <td style=3D"text-align:center">99.99</td>        =
+    <td style=3D"text-align:center">65</td>            <td style=3D"text-al=
+ign:center">Apple</td>            <td style=3D"text-align:center">2.0</td> =
+        </tr>         <tr>            <td style=3D"text-align:center">104</=
+td>            <td style=3D"text-align:center">Apple iPhone Charger</td>   =
+         <td style=3D"text-align:center">The Apple iPhone Charger is a high=
+-quality charger designe               stays powered up and ready to go.   =
+         </td>            <td style=3D"text-align:center">mobile-accessorie=
+s</td>            <td style=3D"text-align:center">19.99</td>            <td=
+ style=3D"text-align:center">4</td>            <td style=3D"text-align:cent=
+er">Apple</td>            <td style=3D"text-align:center">5.0</td>         =
+</tr>         <tr>            <td style=3D"text-align:center">105</td>     =
+       <td style=3D"text-align:center">Apple MagSafe Battery Pack</td>     =
+       <td style=3D"text-align:center">The Apple MagSafe Battery Pack is a =
+portable and convenien               Attach it magnetically for a secure co=
+nnection.            </td>            <td style=3D"text-align:center">mobil=
+e-accessories</td>            <td style=3D"text-align:center">99.99</td>   =
+         <td style=3D"text-align:center">80</td>            <td style=3D"te=
+xt-align:center">Apple</td>            <td style=3D"text-align:center">6.0<=
+/td>         </tr>         <tr>            <td style=3D"text-align:center">=
+106</td>            <td style=3D"text-align:center">Apple Watch Series 4 Go=
+ld</td>            <td style=3D"text-align:center">The Apple Watch Series 4=
+ in Gold is a stylish and advanced               and a beautiful Retina dis=
+play.            </td>            <td style=3D"text-align:center">mobile-ac=
+cessories</td>            <td style=3D"text-align:center">349.99</td>      =
+      <td style=3D"text-align:center">68</td>            <td style=3D"text-=
+align:center">Apple</td>            <td style=3D"text-align:center">6.0</td=
+>         </tr>         <tr>            <td style=3D"text-align:center">107=
+</td>            <td style=3D"text-align:center">Beats Flex Wireless Earpho=
+nes</td>            <td style=3D"text-align:center">The Beats Flex Wireless=
+ Earphones offer a comfortable and                of battery life, they are=
+ ideal for everyday use.            </td>            <td style=3D"text-alig=
+n:center">mobile-accessories</td>            <td style=3D"text-align:center=
+">49.99</td>            <td style=3D"text-align:center">49</td>            =
+<td style=3D"text-align:center">Beats</td>            <td style=3D"text-ali=
+gn:center">6.0</td>         </tr>         <tr>            <td style=3D"text=
+-align:center">108</td>            <td style=3D"text-align:center">iPhone 1=
+2 Silicone Case with MagSafe Plum</td>            <td style=3D"text-align:c=
+enter">The iPhone 12 Silicone Case with MagSafe in Plum is a styl          =
+     MagSafe technology for easy attachment of accessories.            </td=
+>            <td style=3D"text-align:center">mobile-accessories</td>       =
+     <td style=3D"text-align:center">29.99</td>            <td style=3D"tex=
+t-align:center">51</td>            <td style=3D"text-align:center">Apple</t=
+d>            <td style=3D"text-align:center">5.0</td>         </tr>       =
+  <tr>            <td style=3D"text-align:center">109</td>            <td s=
+tyle=3D"text-align:center">Monopod</td>            <td style=3D"text-align:=
+center">The Monopod is a versatile camera accessory for stable and         =
+      and videos with ease.            </td>            <td style=3D"text-a=
+lign:center">mobile-accessories</td>            <td style=3D"text-align:cen=
+ter">19.99</td>            <td style=3D"text-align:center">96</td>         =
+   <td style=3D"text-align:center">TechGear</td>            <td style=3D"te=
+xt-align:center">9.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">110</td>            <td style=3D"text-align:center">=
+Selfie Lamp with iPhone</td>            <td style=3D"text-align:center">The=
+ Selfie Lamp with iPhone is a portable and adjustable L               it to=
+ your iPhone for well-lit photos.            </td>            <td style=3D"=
+text-align:center">mobile-accessories</td>            <td style=3D"text-ali=
+gn:center">14.99</td>            <td style=3D"text-align:center">89</td>   =
+         <td style=3D"text-align:center">GadgetMaster</td>            <td s=
+tyle=3D"text-align:center">7.0</td>         </tr>         <tr>            <=
+td style=3D"text-align:center">111</td>            <td style=3D"text-align:=
+center">Selfie Stick Monopod</td>            <td style=3D"text-align:center=
+">The Selfie Stick Monopod is a extendable and foldable devi               =
+smartphones and cameras.            </td>            <td style=3D"text-alig=
+n:center">mobile-accessories</td>            <td style=3D"text-align:center=
+">12.99</td>            <td style=3D"text-align:center">33</td>            =
+<td style=3D"text-align:center">SnapTech</td>            <td style=3D"text-=
+align:center">7.0</td>         </tr>         <tr>            <td style=3D"t=
+ext-align:center">112</td>            <td style=3D"text-align:center">TV St=
+udio Camera Pedestal</td>            <td style=3D"text-align:center">The TV=
+ Studio Camera Pedestal is a professional-grade came               setting.=
+ Ideal for broadcast and production.            </td>            <td style=
+=3D"text-align:center">mobile-accessories</td>            <td style=3D"text=
+-align:center">499.99</td>            <td style=3D"text-align:center">45</t=
+d>            <td style=3D"text-align:center">ProVision</td>            <td=
+ style=3D"text-align:center">7.0</td>         </tr>         <tr>           =
+ <td style=3D"text-align:center">113</td>            <td style=3D"text-alig=
+n:center">Generic Motorcycle</td>            <td style=3D"text-align:center=
+">The Generic Motorcycle is a versatile and reliable bike su               =
+provides a comfortable and efficient riding experience.            </td>   =
+         <td style=3D"text-align:center">motorcycle</td>            <td sty=
+le=3D"text-align:center">3999.99</td>            <td style=3D"text-align:ce=
+nter">63</td>            <td style=3D"text-align:center">Generic Motors</td=
+>            <td style=3D"text-align:center">9.0</td>         </tr>        =
+ <tr>            <td style=3D"text-align:center">114</td>            <td st=
+yle=3D"text-align:center">Kawasaki Z800</td>            <td style=3D"text-a=
+lign:center">The Kawasaki Z800 is a powerful and agile sportbike known     =
+           features, making it a favorite among motorcycle enthusiasts.    =
+        </td>            <td style=3D"text-align:center">motorcycle</td>   =
+         <td style=3D"text-align:center">8999.99</td>            <td style=
+=3D"text-align:center">88</td>            <td style=3D"text-align:center">K=
+awasaki</td>            <td style=3D"text-align:center">7.0</td>         </=
+tr>         <tr>            <td style=3D"text-align:center">115</td>       =
+     <td style=3D"text-align:center">MotoGP CI.H1</td>            <td style=
+=3D"text-align:center">The MotoGP CI.H1 is a high-performance motorcycle in=
+spired               precision engineering for an exhilarating riding exper=
+ience.            </td>            <td style=3D"text-align:center">motorcyc=
+le</td>            <td style=3D"text-align:center">14999.99</td>           =
+ <td style=3D"text-align:center">85</td>            <td style=3D"text-align=
+:center">MotoGP</td>            <td style=3D"text-align:center">9.0</td>   =
+      </tr>         <tr>            <td style=3D"text-align:center">116</td=
+>            <td style=3D"text-align:center">Scooter Motorcycle</td>       =
+     <td style=3D"text-align:center">The Scooter Motorcycle is a practical =
+and fuel-efficient b               and user-friendly controls for easy mane=
+uverability.            </td>            <td style=3D"text-align:center">mo=
+torcycle</td>            <td style=3D"text-align:center">2999.99</td>      =
+      <td style=3D"text-align:center">11</td>            <td style=3D"text-=
+align:center">ScootMaster</td>            <td style=3D"text-align:center">2=
+.0</td>         </tr>         <tr>            <td style=3D"text-align:cente=
+r">117</td>            <td style=3D"text-align:center">Sportbike Motorcycle=
+</td>            <td style=3D"text-align:center">The Sportbike Motorcycle i=
+s designed for speed and agility               looking for a dynamic and th=
+rilling riding experience.            </td>            <td style=3D"text-al=
+ign:center">motorcycle</td>            <td style=3D"text-align:center">7499=
+.99</td>            <td style=3D"text-align:center">12</td>            <td =
+style=3D"text-align:center">SpeedMaster</td>            <td style=3D"text-a=
+lign:center">9.0</td>         </tr>         <tr>            <td style=3D"te=
+xt-align:center">118</td>            <td style=3D"text-align:center">Attitu=
+de Super Leaves Hand Soap</td>            <td style=3D"text-align:center">A=
+ttitude Super Leaves Hand Soap is a natural and nourishin               and=
+ moisturizes your hands, leaving them feeling fresh and soft.            </=
+td>            <td style=3D"text-align:center">skin-care</td>            <t=
+d style=3D"text-align:center">8.99</td>            <td style=3D"text-align:=
+center">98</td>            <td style=3D"text-align:center">Attitude</td>   =
+         <td style=3D"text-align:center">6.0</td>         </tr>         <tr=
+>            <td style=3D"text-align:center">119</td>            <td style=
+=3D"text-align:center">Olay Ultra Moisture Shea Butter Body Wash</td>      =
+      <td style=3D"text-align:center">Olay Ultra Moisture Shea Butter Body =
+Wash is a luxurious b               power of shea butter. Enjoy a rich lath=
+er and silky-smooth skin.            </td>            <td style=3D"text-ali=
+gn:center">skin-care</td>            <td style=3D"text-align:center">12.99<=
+/td>            <td style=3D"text-align:center">43</td>            <td styl=
+e=3D"text-align:center">Olay</td>            <td style=3D"text-align:center=
+">8.0</td>         </tr>         <tr>            <td style=3D"text-align:ce=
+nter">120</td>            <td style=3D"text-align:center">Vaseline Men Body=
+ and Face Lotion</td>            <td style=3D"text-align:center">Vaseline M=
+en Body and Face Lotion is a specially formulate               It absorbs q=
+uickly and helps keep the skin hydrated and healthy.            </td>      =
+      <td style=3D"text-align:center">skin-care</td>            <td style=
+=3D"text-align:center">9.99</td>            <td style=3D"text-align:center"=
+>54</td>            <td style=3D"text-align:center">Vaseline</td>          =
+  <td style=3D"text-align:center">10.0</td>         </tr>         <tr>     =
+       <td style=3D"text-align:center">121</td>            <td style=3D"tex=
+t-align:center">iPhone 5s</td>            <td style=3D"text-align:center">T=
+he iPhone 5s is a classic smartphone known for its compac               old=
+er model, it still provides a reliable user experience.            </td>   =
+         <td style=3D"text-align:center">smartphones</td>            <td st=
+yle=3D"text-align:center">199.99</td>            <td style=3D"text-align:ce=
+nter">65</td>            <td style=3D"text-align:center">Apple</td>        =
+    <td style=3D"text-align:center">4.0</td>         </tr>         <tr>    =
+        <td style=3D"text-align:center">122</td>            <td style=3D"te=
+xt-align:center">iPhone 6</td>            <td style=3D"text-align:center">T=
+he iPhone 6 is a stylish and capable smartphone with a la               and=
+ design elements, making it a popular choice in its time.            </td> =
+           <td style=3D"text-align:center">smartphones</td>            <td =
+style=3D"text-align:center">299.99</td>            <td style=3D"text-align:=
+center">99</td>            <td style=3D"text-align:center">Apple</td>      =
+      <td style=3D"text-align:center">8.0</td>         </tr>         <tr>  =
+          <td style=3D"text-align:center">123</td>            <td style=3D"=
+text-align:center">iPhone 13 Pro</td>            <td style=3D"text-align:ce=
+nter">The iPhone 13 Pro is a cutting-edge smartphone with a powe           =
+    It offers advanced features for users who demand top-notch technology. =
+           </td>            <td style=3D"text-align:center">smartphones</td=
+>            <td style=3D"text-align:center">1099.99</td>            <td st=
+yle=3D"text-align:center">26</td>            <td style=3D"text-align:center=
+">Apple</td>            <td style=3D"text-align:center">8.0</td>         </=
+tr>         <tr>            <td style=3D"text-align:center">124</td>       =
+     <td style=3D"text-align:center">iPhone X</td>            <td style=3D"=
+text-align:center">The iPhone X is a flagship smartphone featuring a bezel-=
+le               performance. It represents a milestone in iPhone design an=
+d innovation.            </td>            <td style=3D"text-align:center">s=
+martphones</td>            <td style=3D"text-align:center">899.99</td>     =
+       <td style=3D"text-align:center">99</td>            <td style=3D"text=
+-align:center">Apple</td>            <td style=3D"text-align:center">10.0</=
+td>         </tr>         <tr>            <td style=3D"text-align:center">1=
+25</td>            <td style=3D"text-align:center">Oppo A57</td>           =
+ <td style=3D"text-align:center">The Oppo A57 is a mid-range smartphone kno=
+wn for its sleek               and affordability, making it a popular choic=
+e.            </td>            <td style=3D"text-align:center">smartphones<=
+/td>            <td style=3D"text-align:center">249.99</td>            <td =
+style=3D"text-align:center">76</td>            <td style=3D"text-align:cent=
+er">Oppo</td>            <td style=3D"text-align:center">3.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">126</td>      =
+      <td style=3D"text-align:center">Oppo F19 Pro Plus</td>            <td=
+ style=3D"text-align:center">The Oppo F19 Pro Plus is a feature-rich smartp=
+hone with a                and a powerful performance for a premium user ex=
+perience.            </td>            <td style=3D"text-align:center">smart=
+phones</td>            <td style=3D"text-align:center">399.99</td>         =
+   <td style=3D"text-align:center">92</td>            <td style=3D"text-ali=
+gn:center">Oppo</td>            <td style=3D"text-align:center">2.0</td>   =
+      </tr>         <tr>            <td style=3D"text-align:center">127</td=
+>            <td style=3D"text-align:center">Oppo K1</td>            <td st=
+yle=3D"text-align:center">The Oppo K1 series offers a range of smartphones =
+with vari               and reliable performance, the Oppo K1 series caters=
+ to diverse user preferences.            </td>            <td style=3D"text=
+-align:center">smartphones</td>            <td style=3D"text-align:center">=
+299.99</td>            <td style=3D"text-align:center">61</td>            <=
+td style=3D"text-align:center">Oppo</td>            <td style=3D"text-align=
+:center">2.0</td>         </tr>         <tr>            <td style=3D"text-a=
+lign:center">128</td>            <td style=3D"text-align:center">Realme C35=
+</td>            <td style=3D"text-align:center">The Realme C35 is a budget=
+-friendly smartphone with a focu               reliable performance and use=
+r-friendly experience.            </td>            <td style=3D"text-align:=
+center">smartphones</td>            <td style=3D"text-align:center">149.99<=
+/td>            <td style=3D"text-align:center">81</td>            <td styl=
+e=3D"text-align:center">Realme</td>            <td style=3D"text-align:cent=
+er">6.0</td>         </tr>         <tr>            <td style=3D"text-align:=
+center">129</td>            <td style=3D"text-align:center">Realme X</td>  =
+          <td style=3D"text-align:center">The Realme X is a mid-range smart=
+phone known for its sleek               and camera capabilities for users s=
+eeking a quality device.            </td>            <td style=3D"text-alig=
+n:center">smartphones</td>            <td style=3D"text-align:center">299.9=
+9</td>            <td style=3D"text-align:center">87</td>            <td st=
+yle=3D"text-align:center">Realme</td>            <td style=3D"text-align:ce=
+nter">1.0</td>         </tr>         <tr>            <td style=3D"text-alig=
+n:center">130</td>            <td style=3D"text-align:center">Realme XT</td=
+>            <td style=3D"text-align:center">The Realme XT is a feature-ric=
+h smartphone with a focus on               delivering high-quality photos a=
+nd videos for photography enthusiasts.            </td>            <td styl=
+e=3D"text-align:center">smartphones</td>            <td style=3D"text-align=
+:center">349.99</td>            <td style=3D"text-align:center">53</td>    =
+        <td style=3D"text-align:center">Realme</td>            <td style=3D=
+"text-align:center">4.0</td>         </tr>         <tr>            <td styl=
+e=3D"text-align:center">131</td>            <td style=3D"text-align:center"=
+>Samsung Galaxy S7</td>            <td style=3D"text-align:center">The Sams=
+ung Galaxy S7 is a flagship smartphone known for i               display, p=
+owerful camera, and robust performance.            </td>            <td sty=
+le=3D"text-align:center">smartphones</td>            <td style=3D"text-alig=
+n:center">299.99</td>            <td style=3D"text-align:center">55</td>   =
+         <td style=3D"text-align:center">Samsung</td>            <td style=
+=3D"text-align:center">8.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">132</td>            <td style=3D"text-align:cent=
+er">Samsung Galaxy S8</td>            <td style=3D"text-align:center">The S=
+amsung Galaxy S8 is a premium smartphone with an Infi               camera =
+capabilities and cutting-edge technology.            </td>            <td s=
+tyle=3D"text-align:center">smartphones</td>            <td style=3D"text-al=
+ign:center">499.99</td>            <td style=3D"text-align:center">75</td> =
+           <td style=3D"text-align:center">Samsung</td>            <td styl=
+e=3D"text-align:center">6.0</td>         </tr>         <tr>            <td =
+style=3D"text-align:center">133</td>            <td style=3D"text-align:cen=
+ter">Samsung Galaxy S10</td>            <td style=3D"text-align:center">The=
+ Samsung Galaxy S10 is a flagship device featuring a dy               It re=
+presents innovation and excellence in smartphone technology.            </t=
+d>            <td style=3D"text-align:center">smartphones</td>            <=
+td style=3D"text-align:center">699.99</td>            <td style=3D"text-ali=
+gn:center">40</td>            <td style=3D"text-align:center">Samsung</td> =
+           <td style=3D"text-align:center">3.0</td>         </tr>         <=
+tr>            <td style=3D"text-align:center">134</td>            <td styl=
+e=3D"text-align:center">Vivo S1</td>            <td style=3D"text-align:cen=
+ter">The Vivo S1 is a stylish and mid-range smartphone offering            =
+   capable camera system, and reliable functionality.            </td>     =
+       <td style=3D"text-align:center">smartphones</td>            <td styl=
+e=3D"text-align:center">249.99</td>            <td style=3D"text-align:cent=
+er">13</td>            <td style=3D"text-align:center">Vivo</td>           =
+ <td style=3D"text-align:center">1.0</td>         </tr>         <tr>       =
+     <td style=3D"text-align:center">135</td>            <td style=3D"text-=
+align:center">Vivo V9</td>            <td style=3D"text-align:center">The V=
+ivo V9 is a smartphone known for its sleek design and               display=
+, dual-camera setup, and a modern design.            </td>            <td s=
+tyle=3D"text-align:center">smartphones</td>            <td style=3D"text-al=
+ign:center">299.99</td>            <td style=3D"text-align:center">19</td> =
+           <td style=3D"text-align:center">Vivo</td>            <td style=
+=3D"text-align:center">5.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">136</td>            <td style=3D"text-align:cent=
+er">Vivo X21</td>            <td style=3D"text-align:center">The Vivo X21 i=
+s a premium smartphone with a focus on cutti               a high-resolutio=
+n display, and advanced camera capabilities.            </td>            <t=
+d style=3D"text-align:center">smartphones</td>            <td style=3D"text=
+-align:center">499.99</td>            <td style=3D"text-align:center">0</td=
+>            <td style=3D"text-align:center">Vivo</td>            <td style=
+=3D"text-align:center">7.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">137</td>            <td style=3D"text-align:cent=
+er">American Football</td>            <td style=3D"text-align:center">The A=
+merican Football is a classic ball used in American f               it an e=
+ssential piece of equipment for the sport.            </td>            <td =
+style=3D"text-align:center">sports-accessories</td>            <td style=3D=
+"text-align:center">19.99</td>            <td style=3D"text-align:center">4=
+8</td>            <td style=3D"text-align:center"></td>            <td styl=
+e=3D"text-align:center">9.0</td>         </tr>         <tr>            <td =
+style=3D"text-align:center">138</td>            <td style=3D"text-align:cen=
+ter">Baseball Ball</td>            <td style=3D"text-align:center">The Base=
+ball Ball is a standard baseball used in baseball                hitting, a=
+nd fielding in the game of baseball.            </td>            <td style=
+=3D"text-align:center">sports-accessories</td>            <td style=3D"text=
+-align:center">8.99</td>            <td style=3D"text-align:center">71</td>=
+            <td style=3D"text-align:center"></td>            <td style=3D"t=
+ext-align:center">6.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">139</td>            <td style=3D"text-align:center">=
+Baseball Glove</td>            <td style=3D"text-align:center">The Baseball=
+ Glove is a protective glove worn by baseball                players with c=
+omfort and control during the game.            </td>            <td style=
+=3D"text-align:center">sports-accessories</td>            <td style=3D"text=
+-align:center">24.99</td>            <td style=3D"text-align:center">43</td=
+>            <td style=3D"text-align:center"></td>            <td style=3D"=
+text-align:center">7.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">140</td>            <td style=3D"text-align:center">=
+Basketball</td>            <td style=3D"text-align:center">The Basketball i=
+s a standard ball used in basketball games               of basketball, sui=
+table for both indoor and outdoor play.            </td>            <td sty=
+le=3D"text-align:center">sports-accessories</td>            <td style=3D"te=
+xt-align:center">14.99</td>            <td style=3D"text-align:center">100<=
+/td>            <td style=3D"text-align:center"></td>            <td style=
+=3D"text-align:center">10.0</td>         </tr>         <tr>            <td =
+style=3D"text-align:center">141</td>            <td style=3D"text-align:cen=
+ter">Basketball Rim</td>            <td style=3D"text-align:center">The Bas=
+ketball Rim is a sturdy hoop and net assembly mount               and scori=
+ng in the game of basketball.            </td>            <td style=3D"text=
+-align:center">sports-accessories</td>            <td style=3D"text-align:c=
+enter">39.99</td>            <td style=3D"text-align:center">57</td>       =
+     <td style=3D"text-align:center"></td>            <td style=3D"text-ali=
+gn:center">7.0</td>         </tr>         <tr>            <td style=3D"text=
+-align:center">142</td>            <td style=3D"text-align:center">Cricket =
+Ball</td>            <td style=3D"text-align:center">The Cricket Ball is a =
+hard leather ball used in the sport                and seam contribute to t=
+he dynamics of cricket play.            </td>            <td style=3D"text-=
+align:center">sports-accessories</td>            <td style=3D"text-align:ce=
+nter">12.99</td>            <td style=3D"text-align:center">42</td>        =
+    <td style=3D"text-align:center"></td>            <td style=3D"text-alig=
+n:center">4.0</td>         </tr>         <tr>            <td style=3D"text-=
+align:center">143</td>            <td style=3D"text-align:center">Cricket B=
+at</td>            <td style=3D"text-align:center">The Cricket Bat is an es=
+sential piece of cricket equipment               comes in various sizes and=
+ designs.            </td>            <td style=3D"text-align:center">sport=
+s-accessories</td>            <td style=3D"text-align:center">29.99</td>   =
+         <td style=3D"text-align:center">3</td>            <td style=3D"tex=
+t-align:center"></td>            <td style=3D"text-align:center">4.0</td>  =
+       </tr>         <tr>            <td style=3D"text-align:center">144</t=
+d>            <td style=3D"text-align:center">Cricket Helmet</td>          =
+  <td style=3D"text-align:center">The Cricket Helmet is a protective headge=
+ar worn by cricke               against fast bowling and bouncers.         =
+   </td>            <td style=3D"text-align:center">sports-accessories</td>=
+            <td style=3D"text-align:center">44.99</td>            <td style=
+=3D"text-align:center">31</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">4.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">145</td>            <td=
+ style=3D"text-align:center">Cricket Wicket</td>            <td style=3D"te=
+xt-align:center">The Cricket Wicket is a set of three stumps and two bails,=
+               the wicket while scoring runs.            </td>            <=
+td style=3D"text-align:center">sports-accessories</td>            <td style=
+=3D"text-align:center">29.99</td>            <td style=3D"text-align:center=
+">31</td>            <td style=3D"text-align:center"></td>            <td s=
+tyle=3D"text-align:center">2.0</td>         </tr>         <tr>            <=
+td style=3D"text-align:center">146</td>            <td style=3D"text-align:=
+center">Feather Shuttlecock</td>            <td style=3D"text-align:center"=
+>The Feather Shuttlecock is used in the sport of badminton.               p=
+roviding stability and accuracy during matches.            </td>           =
+ <td style=3D"text-align:center">sports-accessories</td>            <td sty=
+le=3D"text-align:center">5.99</td>            <td style=3D"text-align:cente=
+r">17</td>            <td style=3D"text-align:center"></td>            <td =
+style=3D"text-align:center">7.0</td>         </tr>         <tr>            =
+<td style=3D"text-align:center">147</td>            <td style=3D"text-align=
+:center">Football</td>            <td style=3D"text-align:center">The Footb=
+all, also known as a soccer ball, is the standard               kicking and=
+ passing in the game.            </td>            <td style=3D"text-align:c=
+enter">sports-accessories</td>            <td style=3D"text-align:center">1=
+7.99</td>            <td style=3D"text-align:center">66</td>            <td=
+ style=3D"text-align:center"></td>            <td style=3D"text-align:cente=
+r">1.0</td>         </tr>         <tr>            <td style=3D"text-align:c=
+enter">148</td>            <td style=3D"text-align:center">Golf Ball</td>  =
+          <td style=3D"text-align:center">The Golf Ball is a small ball use=
+d in the sport of golf. I               distance when struck by a golf club=
+.            </td>            <td style=3D"text-align:center">sports-access=
+ories</td>            <td style=3D"text-align:center">9.99</td>            =
+<td style=3D"text-align:center">45</td>            <td style=3D"text-align:=
+center"></td>            <td style=3D"text-align:center">1.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">149</td>      =
+      <td style=3D"text-align:center">Iron Golf</td>            <td style=
+=3D"text-align:center">The Iron Golf is a type of golf club designed for va=
+rious                shots, chipping, and other golfing techniques.        =
+    </td>            <td style=3D"text-align:center">sports-accessories</td=
+>            <td style=3D"text-align:center">49.99</td>            <td styl=
+e=3D"text-align:center">7</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">5.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">150</td>            <td=
+ style=3D"text-align:center">Metal Baseball Bat</td>            <td style=
+=3D"text-align:center">The Metal Baseball Bat is a durable and lightweight =
+baseba               for hitting and batting practice.            </td>    =
+        <td style=3D"text-align:center">sports-accessories</td>            =
+<td style=3D"text-align:center">29.99</td>            <td style=3D"text-ali=
+gn:center">37</td>            <td style=3D"text-align:center"></td>        =
+    <td style=3D"text-align:center">4.0</td>         </tr>         <tr>    =
+        <td style=3D"text-align:center">151</td>            <td style=3D"te=
+xt-align:center">Tennis Ball</td>            <td style=3D"text-align:center=
+">The Tennis Ball is a standard ball used in the sport of te               =
+during matches or practice sessions.            </td>            <td style=
+=3D"text-align:center">sports-accessories</td>            <td style=3D"text=
+-align:center">6.99</td>            <td style=3D"text-align:center">99</td>=
+            <td style=3D"text-align:center"></td>            <td style=3D"t=
+ext-align:center">3.0</td>         </tr>         <tr>            <td style=
+=3D"text-align:center">152</td>            <td style=3D"text-align:center">=
+Tennis Racket</td>            <td style=3D"text-align:center">The Tennis Ra=
+cket is an essential piece of equipment used                allowing player=
+s to hit the tennis ball.            </td>            <td style=3D"text-ali=
+gn:center">sports-accessories</td>            <td style=3D"text-align:cente=
+r">49.99</td>            <td style=3D"text-align:center">86</td>           =
+ <td style=3D"text-align:center"></td>            <td style=3D"text-align:c=
+enter">2.0</td>         </tr>         <tr>            <td style=3D"text-ali=
+gn:center">153</td>            <td style=3D"text-align:center">Volleyball</=
+td>            <td style=3D"text-align:center">The Volleyball is a standard=
+ ball used in the sport of vol               net during volleyball matches.=
+            </td>            <td style=3D"text-align:center">sports-accesso=
+ries</td>            <td style=3D"text-align:center">11.99</td>            =
+<td style=3D"text-align:center">0</td>            <td style=3D"text-align:c=
+enter"></td>            <td style=3D"text-align:center">6.0</td>         </=
+tr>         <tr>            <td style=3D"text-align:center">154</td>       =
+     <td style=3D"text-align:center">Black Sun Glasses</td>            <td =
+style=3D"text-align:center">The Black Sun Glasses are a classic and stylish=
+ choice, fe               UV protection and a fashionable look.            =
+</td>            <td style=3D"text-align:center">sunglasses</td>           =
+ <td style=3D"text-align:center">29.99</td>            <td style=3D"text-al=
+ign:center">100</td>            <td style=3D"text-align:center">Fashion Sha=
+des</td>            <td style=3D"text-align:center">3.0</td>         </tr> =
+        <tr>            <td style=3D"text-align:center">155</td>           =
+ <td style=3D"text-align:center">Classic Sun Glasses</td>            <td st=
+yle=3D"text-align:center">The Classic Sun Glasses offer a timeless design w=
+ith a neu               and suitable for various occasions.            </td=
+>            <td style=3D"text-align:center">sunglasses</td>            <td=
+ style=3D"text-align:center">24.99</td>            <td style=3D"text-align:=
+center">100</td>            <td style=3D"text-align:center">Fashion Shades<=
+/td>            <td style=3D"text-align:center">9.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">156</td>            <td=
+ style=3D"text-align:center">Green and Black Glasses</td>            <td st=
+yle=3D"text-align:center">The Green and Black Glasses feature a bold combin=
+ation of                collection. They are both stylish and eye-catching.=
+            </td>            <td style=3D"text-align:center">sunglasses</td=
+>            <td style=3D"text-align:center">34.99</td>            <td styl=
+e=3D"text-align:center">74</td>            <td style=3D"text-align:center">=
+Fashion Shades</td>            <td style=3D"text-align:center">9.0</td>    =
+     </tr>         <tr>            <td style=3D"text-align:center">157</td>=
+            <td style=3D"text-align:center">Party Glasses</td>            <=
+td style=3D"text-align:center">The Party Glasses are designed to add flair =
+to your party                adding a playful touch to your look during cel=
+ebrations.            </td>            <td style=3D"text-align:center">sung=
+lasses</td>            <td style=3D"text-align:center">19.99</td>          =
+  <td style=3D"text-align:center">35</td>            <td style=3D"text-alig=
+n:center">Fashion Fun</td>            <td style=3D"text-align:center">1.0</=
+td>         </tr>         <tr>            <td style=3D"text-align:center">1=
+58</td>            <td style=3D"text-align:center">Sunglasses</td>         =
+   <td style=3D"text-align:center">The Sunglasses offer a classic and simpl=
+e design with a fo               while maintaining a timeless look.        =
+    </td>            <td style=3D"text-align:center">sunglasses</td>       =
+     <td style=3D"text-align:center">22.99</td>            <td style=3D"tex=
+t-align:center">59</td>            <td style=3D"text-align:center">Fashion =
+Shades</td>            <td style=3D"text-align:center">6.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">159</td>        =
+    <td style=3D"text-align:center">iPad Mini 2021 Starlight</td>          =
+  <td style=3D"text-align:center">The iPad Mini 2021 in Starlight is a comp=
+act and powerful                A-series chip, and a sleek design, it offer=
+s a premium tablet experience.            </td>            <td style=3D"tex=
+t-align:center">tablets</td>            <td style=3D"text-align:center">499=
+.99</td>            <td style=3D"text-align:center">32</td>            <td =
+style=3D"text-align:center">Apple</td>            <td style=3D"text-align:c=
+enter">3.0</td>         </tr>         <tr>            <td style=3D"text-ali=
+gn:center">160</td>            <td style=3D"text-align:center">Samsung Gala=
+xy Tab S8 Plus Grey</td>            <td style=3D"text-align:center">The Sam=
+sung Galaxy Tab S8 Plus in Grey is a high-performan               processor=
+, and S Pen support, it's ideal for productivity and entertainment.        =
+    </td>            <td style=3D"text-align:center">tablets</td>          =
+  <td style=3D"text-align:center">599.99</td>            <td style=3D"text-=
+align:center">76</td>            <td style=3D"text-align:center">Samsung</t=
+d>            <td style=3D"text-align:center">10.0</td>         </tr>      =
+   <tr>            <td style=3D"text-align:center">161</td>            <td =
+style=3D"text-align:center">Samsung Galaxy Tab White</td>            <td st=
+yle=3D"text-align:center">The Samsung Galaxy Tab in White is a sleek and ve=
+rsatile A               a range of features, it offers a great user experie=
+nce for various tasks.            </td>            <td style=3D"text-align:=
+center">tablets</td>            <td style=3D"text-align:center">349.99</td>=
+            <td style=3D"text-align:center">0</td>            <td style=3D"=
+text-align:center">Samsung</td>            <td style=3D"text-align:center">=
+8.0</td>         </tr>         <tr>            <td style=3D"text-align:cent=
+er">162</td>            <td style=3D"text-align:center">Blue Frock</td>    =
+        <td style=3D"text-align:center">The Blue Frock is a charming and st=
+ylish dress for various               it adds a touch of elegance to your w=
+ardrobe.            </td>            <td style=3D"text-align:center">tops</=
+td>            <td style=3D"text-align:center">29.99</td>            <td st=
+yle=3D"text-align:center">37</td>            <td style=3D"text-align:center=
+"></td>            <td style=3D"text-align:center">2.0</td>         </tr>  =
+       <tr>            <td style=3D"text-align:center">163</td>            =
+<td style=3D"text-align:center">Girl Summer Dress</td>            <td style=
+=3D"text-align:center">The Girl Summer Dress is a cute and breezy dress des=
+igned                it's perfect for keeping cool and stylish during the s=
+ummer.            </td>            <td style=3D"text-align:center">tops</td=
+>            <td style=3D"text-align:center">19.99</td>            <td styl=
+e=3D"text-align:center">20</td>            <td style=3D"text-align:center">=
+</td>            <td style=3D"text-align:center">3.0</td>         </tr>    =
+     <tr>            <td style=3D"text-align:center">164</td>            <t=
+d style=3D"text-align:center">Gray Dress</td>            <td style=3D"text-=
+align:center">The Gray Dress is a versatile and chic option for various    =
+            making it a wardrobe staple for any fashion-forward individual.=
+            </td>            <td style=3D"text-align:center">tops</td>     =
+       <td style=3D"text-align:center">34.99</td>            <td style=3D"t=
+ext-align:center">81</td>            <td style=3D"text-align:center"></td> =
+           <td style=3D"text-align:center">5.0</td>         </tr>         <=
+tr>            <td style=3D"text-align:center">165</td>            <td styl=
+e=3D"text-align:center">Short Frock</td>            <td style=3D"text-align=
+:center">The Short Frock is a playful and trendy dress with a short        =
+       style and comfort for a fashionable look.            </td>          =
+  <td style=3D"text-align:center">tops</td>            <td style=3D"text-al=
+ign:center">24.99</td>            <td style=3D"text-align:center">19</td>  =
+          <td style=3D"text-align:center"></td>            <td style=3D"tex=
+t-align:center">8.0</td>         </tr>         <tr>            <td style=3D=
+"text-align:center">166</td>            <td style=3D"text-align:center">Tar=
+tan Dress</td>            <td style=3D"text-align:center">The Tartan Dress =
+features a classic tartan pattern, bringi               for fall and winter=
+, it adds a hint of traditional charm.            </td>            <td styl=
+e=3D"text-align:center">tops</td>            <td style=3D"text-align:center=
+">39.99</td>            <td style=3D"text-align:center">100</td>           =
+ <td style=3D"text-align:center"></td>            <td style=3D"text-align:c=
+enter">4.0</td>         </tr>         <tr>            <td style=3D"text-ali=
+gn:center">167</td>            <td style=3D"text-align:center">300 Touring<=
+/td>            <td style=3D"text-align:center">The 300 Touring is a stylis=
+h and comfortable sedan, known             <td style=3D"text-align:center">=
+vehicle</td>            <td style=3D"text-align:center">28999.99</td>      =
+      <td style=3D"text-align:center">53</td>            <td style=3D"text-=
+align:center">Chrysler</td>            <td style=3D"text-align:center">5.0<=
+/td>         </tr>         <tr>            <td style=3D"text-align:center">=
+168</td>            <td style=3D"text-align:center">Charger SXT RWD</td>   =
+         <td style=3D"text-align:center">The Charger SXT RWD is a powerful =
+and sporty rear-wheel-dr            <td style=3D"text-align:center">vehicle=
+</td>            <td style=3D"text-align:center">32999.99</td>            <=
+td style=3D"text-align:center">85</td>            <td style=3D"text-align:c=
+enter">Dodge</td>            <td style=3D"text-align:center">8.0</td>      =
+   </tr>         <tr>            <td style=3D"text-align:center">169</td>  =
+          <td style=3D"text-align:center">Dodge Hornet GT Plus</td>        =
+    <td style=3D"text-align:center">The Dodge Hornet GT Plus is a compact a=
+nd agile hatchback,            <td style=3D"text-align:center">vehicle</td>=
+            <td style=3D"text-align:center">24999.99</td>            <td st=
+yle=3D"text-align:center">81</td>            <td style=3D"text-align:center=
+">Dodge</td>            <td style=3D"text-align:center">10.0</td>         <=
+/tr>         <tr>            <td style=3D"text-align:center">170</td>      =
+      <td style=3D"text-align:center">Durango SXT RWD</td>            <td s=
+tyle=3D"text-align:center">The Durango SXT RWD is a spacious and versatile =
+SUV, known            <td style=3D"text-align:center">vehicle</td>         =
+   <td style=3D"text-align:center">36999.99</td>            <td style=3D"te=
+xt-align:center">0</td>            <td style=3D"text-align:center">Dodge</t=
+d>            <td style=3D"text-align:center">8.0</td>         </tr>       =
+  <tr>            <td style=3D"text-align:center">171</td>            <td s=
+tyle=3D"text-align:center">Pacifica Touring</td>            <td style=3D"te=
+xt-align:center">The Pacifica Touring is a stylish and well-equipped miniva=
+            <td style=3D"text-align:center">vehicle</td>            <td sty=
+le=3D"text-align:center">31999.99</td>            <td style=3D"text-align:c=
+enter">22</td>            <td style=3D"text-align:center">Chrysler</td>    =
+        <td style=3D"text-align:center">8.0</td>         </tr>         <tr>=
+            <td style=3D"text-align:center">172</td>            <td style=
+=3D"text-align:center">Blue Women's Handbag</td>            <td style=3D"te=
+xt-align:center">The Blue Women's Handbag is a stylish and spacious accesso=
+               it combines fashion and functionality.            </td>     =
+       <td style=3D"text-align:center">womens-bags</td>            <td styl=
+e=3D"text-align:center">49.99</td>            <td style=3D"text-align:cente=
+r">76</td>            <td style=3D"text-align:center">Fashionista</td>     =
+       <td style=3D"text-align:center">2.0</td>         </tr>         <tr> =
+           <td style=3D"text-align:center">173</td>            <td style=3D=
+"text-align:center">Heshe Women's Leather Bag</td>            <td style=3D"=
+text-align:center">The Heshe Women's Leather Bag is a luxurious and high-qu=
+al               and durable craftsmanship, it's a versatile accessory.    =
+        </td>            <td style=3D"text-align:center">womens-bags</td>  =
+          <td style=3D"text-align:center">129.99</td>            <td style=
+=3D"text-align:center">9</td>            <td style=3D"text-align:center">He=
+she</td>            <td style=3D"text-align:center">5.0</td>         </tr> =
+        <tr>            <td style=3D"text-align:center">174</td>           =
+ <td style=3D"text-align:center">Prada Women Bag</td>            <td style=
+=3D"text-align:center">The Prada Women Bag is an iconic designer bag that e=
+xudes                logo, it's a statement piece for fashion enthusiasts. =
+           </td>            <td style=3D"text-align:center">womens-bags</td=
+>            <td style=3D"text-align:center">599.99</td>            <td sty=
+le=3D"text-align:center">43</td>            <td style=3D"text-align:center"=
+>Prada</td>            <td style=3D"text-align:center">4.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">175</td>        =
+    <td style=3D"text-align:center">White Faux Leather Backpack</td>       =
+     <td style=3D"text-align:center">The White Faux Leather Backpack is a t=
+rendy and practical                storage space, it's perfect for both cas=
+ual and on-the-go styles.            </td>            <td style=3D"text-ali=
+gn:center">womens-bags</td>            <td style=3D"text-align:center">39.9=
+9</td>            <td style=3D"text-align:center">89</td>            <td st=
+yle=3D"text-align:center">Urban Chic</td>            <td style=3D"text-alig=
+n:center">1.0</td>         </tr>         <tr>            <td style=3D"text-=
+align:center">176</td>            <td style=3D"text-align:center">Women Han=
+dbag Black</td>            <td style=3D"text-align:center">The Women Handba=
+g in Black is a classic and versatile acce               and functional des=
+ign, it's a must-have in every woman's wardrobe.            </td>          =
+  <td style=3D"text-align:center">womens-bags</td>            <td style=3D"=
+text-align:center">59.99</td>            <td style=3D"text-align:center">24=
+</td>            <td style=3D"text-align:center">Elegance Collection</td>  =
+          <td style=3D"text-align:center">1.0</td>         </tr>         <t=
+r>            <td style=3D"text-align:center">177</td>            <td style=
+=3D"text-align:center">Black Women's Gown</td>            <td style=3D"text=
+-align:center">The Black Women's Gown is an elegant and timeless evening   =
+             and special occasions, exuding sophistication and style.      =
+      </td>            <td style=3D"text-align:center">womens-dresses</td> =
+           <td style=3D"text-align:center">129.99</td>            <td style=
+=3D"text-align:center">59</td>            <td style=3D"text-align:center"><=
+/td>            <td style=3D"text-align:center">7.0</td>         </tr>     =
+    <tr>            <td style=3D"text-align:center">178</td>            <td=
+ style=3D"text-align:center">Corset Leather With Skirt</td>            <td =
+style=3D"text-align:center">The Corset Leather With Skirt is a bold and edg=
+y ensemble                fashion-forward individuals, it makes a statement=
+ at any event.            </td>            <td style=3D"text-align:center">=
+womens-dresses</td>            <td style=3D"text-align:center">89.99</td>  =
+          <td style=3D"text-align:center">59</td>            <td style=3D"t=
+ext-align:center"></td>            <td style=3D"text-align:center">1.0</td>=
+         </tr>         <tr>            <td style=3D"text-align:center">179<=
+/td>            <td style=3D"text-align:center">Corset With Black Skirt</td=
+>            <td style=3D"text-align:center">The Corset With Black Skirt is=
+ a chic and versatile outfit               offers a trendy and coordinated =
+look for various occasions.            </td>            <td style=3D"text-a=
+lign:center">womens-dresses</td>            <td style=3D"text-align:center"=
+>79.99</td>            <td style=3D"text-align:center">67</td>            <=
+td style=3D"text-align:center"></td>            <td style=3D"text-align:cen=
+ter">6.0</td>         </tr>         <tr>            <td style=3D"text-align=
+:center">180</td>            <td style=3D"text-align:center">Dress Pea</td>=
+            <td style=3D"text-align:center">The Dress Pea is a stylish and =
+comfortable dress with a pe               element to your wardrobe, making =
+it a great choice for day-to-day wear.            </td>            <td styl=
+e=3D"text-align:center">womens-dresses</td>            <td style=3D"text-al=
+ign:center">49.99</td>            <td style=3D"text-align:center">29</td>  =
+          <td style=3D"text-align:center"></td>            <td style=3D"tex=
+t-align:center">7.0</td>         </tr>         <tr>            <td style=3D=
+"text-align:center">181</td>            <td style=3D"text-align:center">Mar=
+ni Red &amp; Black Suit</td>            <td style=3D"text-align:center">The=
+ Marni Red &amp; Black Suit is a sophisticated and fash               it sh=
+owcases a modern design for a bold and confident look.            </td>    =
+        <td style=3D"text-align:center">womens-dresses</td>            <td =
+style=3D"text-align:center">179.99</td>            <td style=3D"text-align:=
+center">15</td>            <td style=3D"text-align:center"></td>           =
+ <td style=3D"text-align:center">4.0</td>         </tr>         <tr>       =
+     <td style=3D"text-align:center">182</td>            <td style=3D"text-=
+align:center">Green Crystal Earring</td>            <td style=3D"text-align=
+:center">The Green Crystal Earring is a dazzling accessory that fea        =
+       touch of elegance to your ensemble, perfect for formal or special oc=
+casions.            </td>            <td style=3D"text-align:center">womens=
+-jewellery</td>            <td style=3D"text-align:center">29.99</td>      =
+      <td style=3D"text-align:center">1</td>            <td style=3D"text-a=
+lign:center"></td>            <td style=3D"text-align:center">10.0</td>    =
+     </tr>         <tr>            <td style=3D"text-align:center">183</td>=
+            <td style=3D"text-align:center">Green Oval Earring</td>        =
+    <td style=3D"text-align:center">The Green Oval Earring is a stylish and=
+ versatile accessor               its green hue and contemporary design mak=
+e it a standout piece.            </td>            <td style=3D"text-align:=
+center">womens-jewellery</td>            <td style=3D"text-align:center">24=
+.99</td>            <td style=3D"text-align:center">89</td>            <td =
+style=3D"text-align:center"></td>            <td style=3D"text-align:center=
+">8.0</td>         </tr>         <tr>            <td style=3D"text-align:ce=
+nter">184</td>            <td style=3D"text-align:center">Tropical Earring<=
+/td>            <td style=3D"text-align:center">The Tropical Earring is a f=
+un and playful accessory inspir               it's perfect for adding a tou=
+ch of summer to your look.            </td>            <td style=3D"text-al=
+ign:center">womens-jewellery</td>            <td style=3D"text-align:center=
+">19.99</td>            <td style=3D"text-align:center">76</td>            =
+<td style=3D"text-align:center"></td>            <td style=3D"text-align:ce=
+nter">9.0</td>         </tr>         <tr>            <td style=3D"text-alig=
+n:center">185</td>            <td style=3D"text-align:center">Black &amp; B=
+rown Slipper</td>            <td style=3D"text-align:center">The Black &amp=
+; Brown Slipper is a comfortable and stylish               it adds a touch =
+of sophistication to your relaxation.            </td>            <td style=
+=3D"text-align:center">womens-shoes</td>            <td style=3D"text-align=
+:center">19.99</td>            <td style=3D"text-align:center">80</td>     =
+       <td style=3D"text-align:center">Comfort Trends</td>            <td s=
+tyle=3D"text-align:center">9.0</td>         </tr>         <tr>            <=
+td style=3D"text-align:center">186</td>            <td style=3D"text-align:=
+center">Calvin Klein Heel Shoes</td>            <td style=3D"text-align:cen=
+ter">Calvin Klein Heel Shoes are elegant and sophisticated, des            =
+   materials, they complement your stylish ensemble.            </td>      =
+      <td style=3D"text-align:center">womens-shoes</td>            <td styl=
+e=3D"text-align:center">79.99</td>            <td style=3D"text-align:cente=
+r">99</td>            <td style=3D"text-align:center">Calvin Klein</td>    =
+        <td style=3D"text-align:center">1.0</td>         </tr>         <tr>=
+            <td style=3D"text-align:center">187</td>            <td style=
+=3D"text-align:center">Golden Shoes Woman</td>            <td style=3D"text=
+-align:center">The Golden Shoes for Women are a glamorous choice for spec  =
+             a touch of luxury to your outfit.            </td>            =
+<td style=3D"text-align:center">womens-shoes</td>            <td style=3D"t=
+ext-align:center">49.99</td>            <td style=3D"text-align:center">99<=
+/td>            <td style=3D"text-align:center">Fashion Diva</td>          =
+  <td style=3D"text-align:center">3.0</td>         </tr>         <tr>      =
+      <td style=3D"text-align:center">188</td>            <td style=3D"text=
+-align:center">Pampi Shoes</td>            <td style=3D"text-align:center">=
+Pampi Shoes offer a blend of comfort and style for everyda               oc=
+casions, providing a trendy and relaxed look.            </td>            <=
+td style=3D"text-align:center">womens-shoes</td>            <td style=3D"te=
+xt-align:center">29.99</td>            <td style=3D"text-align:center">36</=
+td>            <td style=3D"text-align:center">Pampi</td>            <td st=
+yle=3D"text-align:center">3.0</td>         </tr>         <tr>            <t=
+d style=3D"text-align:center">189</td>            <td style=3D"text-align:c=
+enter">Red Shoes</td>            <td style=3D"text-align:center">The Red Sh=
+oes make a bold statement with their vibrant red               a pop of col=
+or and style to your wardrobe.            </td>            <td style=3D"tex=
+t-align:center">womens-shoes</td>            <td style=3D"text-align:center=
+">34.99</td>            <td style=3D"text-align:center">53</td>            =
+<td style=3D"text-align:center">Fashion Express</td>            <td style=
+=3D"text-align:center">5.0</td>         </tr>         <tr>            <td s=
+tyle=3D"text-align:center">190</td>            <td style=3D"text-align:cent=
+er">IWC Ingenieur Automatic Steel</td>            <td style=3D"text-align:c=
+enter">The IWC Ingenieur Automatic Steel watch is a durable and s          =
+     movement, it combines precision and style for watch enthusiasts.      =
+      </td>            <td style=3D"text-align:center">womens-watches</td> =
+           <td style=3D"text-align:center">4999.99</td>            <td styl=
+e=3D"text-align:center">85</td>            <td style=3D"text-align:center">=
+IWC</td>            <td style=3D"text-align:center">4.0</td>         </tr> =
+        <tr>            <td style=3D"text-align:center">191</td>           =
+ <td style=3D"text-align:center">Rolex Cellini Moonphase</td>            <t=
+d style=3D"text-align:center">The Rolex Cellini Moonphase watch is a master=
+piece of horo               and elegance that Rolex is renowned for.       =
+     </td>            <td style=3D"text-align:center">womens-watches</td>  =
+          <td style=3D"text-align:center">15999.99</td>            <td styl=
+e=3D"text-align:center">66</td>            <td style=3D"text-align:center">=
+Rolex</td>            <td style=3D"text-align:center">5.0</td>         </tr=
+>         <tr>            <td style=3D"text-align:center">192</td>         =
+   <td style=3D"text-align:center">Rolex Datejust Women</td>            <td=
+ style=3D"text-align:center">The Rolex Datejust Women's watch is an iconic =
+timepiece de               it offers both elegance and functionality.      =
+      </td>            <td style=3D"text-align:center">womens-watches</td> =
+           <td style=3D"text-align:center">10999.99</td>            <td sty=
+le=3D"text-align:center">31</td>            <td style=3D"text-align:center"=
+>Rolex</td>            <td style=3D"text-align:center">8.0</td>         </t=
+r>         <tr>            <td style=3D"text-align:center">193</td>        =
+    <td style=3D"text-align:center">Watch Gold for Women</td>            <t=
+d style=3D"text-align:center">The Gold Women's Watch is a stunning accessor=
+y that combin               it adds a touch of glamour to any outfit.      =
+      </td>            <td style=3D"text-align:center">womens-watches</td> =
+           <td style=3D"text-align:center">799.99</td>            <td style=
+=3D"text-align:center">94</td>            <td style=3D"text-align:center">F=
+ashion Gold</td>            <td style=3D"text-align:center">8.0</td>       =
+  </tr>         <tr>            <td style=3D"text-align:center">194</td>   =
+         <td style=3D"text-align:center">Women's Wrist Watch</td>          =
+  <td style=3D"text-align:center">The Women's Wrist Watch is a versatile an=
+d fashionable tim               yet elegant design, it complements various =
+styles.            </td>            <td style=3D"text-align:center">womens-=
+watches</td>            <td style=3D"text-align:center">129.99</td>        =
+    <td style=3D"text-align:center">55</td>            <td style=3D"text-al=
+ign:center">Fashion Co.</td>            <td style=3D"text-align:center">8.0=
+</td>         </tr>      </table>   </body></html>
+
+<br>Message date: 2024/10/23 21:41:46.436<br><br>=
+
+------=_Part_19_1610408467.1729716106436--
